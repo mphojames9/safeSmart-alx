@@ -1,0 +1,222 @@
+:root {
+    --ff--primary: outfit;
+  
+    --fw-reg: 300;
+    --fw-bold: 900;
+  
+    --clr-light: #ffffff;
+    --clr-dark: #24262b;
+    --clr-accent: #cf9c4e;
+    --clr-button: rgb(220, 34, 34);
+    --crl-main: rgb(6, 5, 9);
+  
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1.2rem;
+    --bs: 1.25em 1.25em 1.75em rgba(51, 72, 189, 0.123),
+          1.125em 1.125em 1.25em rgba(70, 97, 136, 0.082);
+    --ts: 1px 3px 1px rgb(88, 67, 67);
+  }
+  
+  @media (max-width:500px){
+    :root {
+        --fs-h1: 1rem;
+        --fs-h2: 8rem;
+        --fs-h3: 1.15rem;
+        --fs-body: 0.9rem;
+    }
+  }  
+
+.about-us h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 2.5em;
+    margin: 1em 0;
+}
+
+.about-us hr{
+    height: 2px;
+    border: none;
+    background-color: var(--clr-button);
+}
+
+.about-us-container p {
+    width: 100%;
+    max-width: 1200px;
+    font-size: 1.2em;
+    margin: 1.5em auto;
+    padding: .2em 1em;
+}
+
+@media(max-width:820px){
+    .about-us-container p {
+        width: 100%;
+        max-width: 1200px;
+        font-size: 1rem;
+        margin: 1.5em auto;
+    }
+}
+
+/*Key Milestones*/
+
+/* Buttons*/
+.btn {
+    display: inline-block;
+    padding: .5em 2.5em;
+    background-color: var(--clr-button);
+    text-decoration: none;
+    color: var(--clr-light);
+    min-width: 13em;
+    text-align: center;
+    cursor: pointer;
+    font-size: .8em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: var(--fw-bold);
+    transition: transform 200ms ease-in-out;
+    border-radius: 4px;
+    
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+
+/* My kemilestones */
+.my-kemilestones {
+    background-color: var(--crl-main);
+    color: var(--clr-light);
+    text-align: center;
+    padding: 2em;
+}
+
+
+.section__tittle--kemilestones {
+    color: var(--clr-button);
+    position: relative;
+}
+
+.section__tittle--kemilestones::after {
+    content: '';
+    display: block;
+    width: 2em;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background: var(--clr-button);
+    opacity: 0.25;
+}
+.kemilestones {
+    margin-bottom: 2em;
+}
+
+.kemilestone {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom:50px;
+    text-align: left;
+}
+
+
+.kemilestone h3{
+    margin-bottom: 10px;
+}
+
+.mession-sec-container{
+    display: flex;
+    width: 100%;
+    min-height: 280px;
+    gap: 5em;
+    justify-content: center;
+    padding: 2em;
+}
+
+.mession-sec-container .mession-sec-left{
+    width: 50%;
+    max-width: 350px;
+}
+
+.mession-sec-container .mession-sec-left img{
+    width: 300px;
+}
+
+.mession-sec-container .mession-sec-right{
+    width: 50%;
+    font-weight: 100;
+    font-size: 24px;
+    font-weight: 500;
+    max-width: 350px;
+}
+
+@media (min-width: 800px) {
+    .kemilestones {
+        display: flex;
+        max-width: 1000px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .kemilestone + .kemilestone {
+        margin-left: 2em;
+    }
+
+
+}
+
+@media (max-width: 799px){
+    .mession-sec-container{
+        flex-direction: row;
+        gap: 3em;
+
+    }
+
+        .mession-sec-container .mession-sec-left{
+            width: 40%;
+            max-width: 280px;
+        }
+
+        .mession-sec-container .mession-sec-left img{
+            width: 280px;
+        }
+        
+        .mession-sec-container .mession-sec-right{
+            width: 60%;
+            max-width: 350px;
+        }
+    }
+
+    @media (max-width: 600px){
+        .mession-sec-container{
+            flex-direction: row;
+            gap: 0;
+            position: relative;
+            padding-top: 0;
+            height: 500px;
+    
+        }
+    
+            .mession-sec-container .mession-sec-left{
+                max-width: 280px;
+                position: absolute;
+                top: 0;
+                left:0 ;
+                margin-top: -2em;
+            }
+    
+            .mession-sec-container .mession-sec-left img{
+                width: 280px;
+            }
+            
+            .mession-sec-container .mession-sec-right{
+                width: 100%;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                padding: 10px;
+                font-size: 23px;
+                float: right;
+            }
+        }
+
+
