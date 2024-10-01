@@ -58,7 +58,7 @@
 @media (max-width:500px){
   :root {
       --fs-h1: 1rem;
-      --fs-h2: 8rem;
+      --fs-h2: .8rem;
       --fs-h3: 1.15rem;
       --fs-body: 0.9rem;
   }
@@ -627,6 +627,12 @@ header .header-content .place-selection-section p{
   }
   .watch-functionality h1{
       font-size: 2.5em;
+  }
+}
+
+@media(max-width:500px){
+  .place-selection-section h2{
+    font-size: 10px;
   }
 }
 

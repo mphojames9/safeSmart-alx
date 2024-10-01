@@ -30,7 +30,6 @@
   @media (max-width:500px){
     :root {
         --fs-h1: 1rem;
-        --fs-h2: 8rem;
         --fs-h3: 1.15rem;
         --fs-body: 0.9rem;
     }
