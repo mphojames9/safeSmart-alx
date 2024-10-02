@@ -451,8 +451,10 @@ header {
     background-color: rgba(6, 5, 9, 0.623);
     background-blend-mode: multiply;
     background-image: url("./background/dtno17-10.jpg");
-    background-size: 100% 100%;
+    background-size:100% 100%;
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
     min-height: 300px;
     height: fit-content;
     width: 100%;
@@ -560,9 +562,21 @@ header .header-content .place-selection-section p{
 }
 
 @media (max-width:609px){
+
+  header {
+    background-image: url("./background/th.jfif");
+    background-position: center;
+    background-size: 100% 100%;
+    background-attachment: scroll;
+  }
+
     header .header-content .place-selection-section .place-options  li {
         text-align: left;
         width: 100px;
+    }
+
+    .header-content-h1{
+      font-size: 1.5em;
     }
 }
 
@@ -570,7 +584,6 @@ header .header-content .place-selection-section p{
 
 .watch-fanctionality-container{
   width: 100%;
-  background-image: url("/src/asserts/contextImg/img2.png");
   background-size: 500px;
   background-repeat: no-repeat;
   background-position: right;
@@ -595,10 +608,8 @@ header .header-content .place-selection-section p{
   margin: 0 auto;
 }
 
-.left-watch-functionality{
-  width: 60%;
-  background-color: rgba(245, 222, 179, 0);
-  padding: 2em;
+.right-watch-functionality{
+  background-image: url("../contextImg/img2.jpg");
 }
 
 @media(max-width:1050px){
@@ -628,6 +639,10 @@ header .header-content .place-selection-section p{
   .watch-functionality h1{
       font-size: 2.5em;
   }
+
+  header .header-content .place-selection-section h2{
+    display: none;
+}
 }
 
 @media(max-width:500px){
@@ -637,6 +652,19 @@ header .header-content .place-selection-section p{
 }
 
 @media(max-width:450px){
+
+  header .header-content .header-subscribe-box-section {
+    height:50px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stay-healthy{
+  display: none;
+}
+
   .left-watch-functionality{
       width: 100%;
       background-color: rgba(245, 222, 179, 0);

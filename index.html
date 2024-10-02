@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
    <title>Safe Smart</title>
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="context.css">
+    <link rel="stylesheet" href="stickyCards.css">
     <link rel="stylesheet" href="footer.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -55,7 +55,7 @@
                   <li><a href="#">Founders</a></li>
                   </ul>
                 </li>
-                <li><a href="./pages/contactus.html">Contact Us</a></li>
+                <li><a href="/pages/contactus.html">Contact Us</a></li>
               </ul>
             </div>
             <button class="sign-in-button">Sign in</button>
@@ -89,7 +89,7 @@
     
       <header>
         <div class="header-content ">
-          <h1 class="header-content-h1"><span class="header-span">Subscribe.</span> Get updated. Stay healthy.</h1>
+          <h1 class="header-content-h1"><span class="header-span">Subscribe.</span> Get updated. <span class="stay-healthy">Stay healthy.</span></h1>
           <div class="header-subscribe-box-section">
             <input class=search-place type="text" placeholder="Enter yout email address">
             <button class="subscribe-button">
@@ -125,112 +125,50 @@
         <h1 style="margin: 1em;">
           Key Features of the Safe Smart Bracelet
         </h1>
-        <ul style="margin-left: 2.5em; list-style-type:square;">
-          <li> Continuous Heart Rate Monitoring: Real-time updates to track your heart health.</li>
-          <li>Struggle Detection: Senses physical struggles and sends instant alerts.</li>
-          <li>Real-Time Alerts: Immediate notifications to your contacts or emergency services.</li>
-          <li>Discreet Design: Sleek and stylish, blending seamlessly with any attire.</li>
-          <li>Easy-to-Use Interface: Simple navigation for all essential functions</li>
-          <li>Long Battery Life: Extended battery for reliable, continuous protection.</li>
-          <li>Customizable Alerts: Personalize who gets alerts and under what conditions.</li>
-          <li>Secure Data Encryption: Top-tier encryption ensures your data is safe</li>
-          <li>Water-Resistant: Reliable protection in all weather and activities</li>
-          <li>Mobile App Sync: Sync with our app for detailed health and safety insights.</li>
-        </ul>
     </div>
     <div class="about-me__img_sec" style="width: 400px; margin: 0 auto;">
       <img src="./contextImg/watch.png"alt="" class="about-me__img"></img>
     </div>
     </section>
 
-          <!-- About us section -->
-          <section class="about-us">
-            <h1>About Safe <span>Sma</span>rt</h1>
-            <hr />
-        <div class="about-us-container">
-            <p>Welcome to Safe Smart, where cutting-edge technology meets personal safety. 
-                We are passionate about creating innovative solutions that empower individuals
-                 to live confidently and securely. Our flagship product, the Safe Smart bracelet,
-                  is designed with your well-being in mind, combining advanced health monitoring
-                   and safety features in a sleek, discreet design.</p>
-        
-    
-                <p>At Safe Smart, we understand the importance of feeling safe in your daily life.
-                 Our bracelet continuously tracks your heart rate and detects physical struggles
-                , providing real-time alerts to ensure immediate assistance when you need it most.
-                 Whether you're navigating busy city streets, enjoying an evening run,
-                  or simply going about your daily routine, Safe Smart is your trusted companion.</p>
-                
-                <p>Our mission is to revolutionize personal safety by integrating state-of-the-art technology with practical,
-                everyday wearables. We are committed to providing reliable and user-friendly solutions
-                that offer peace of mind for you and your loved ones. Join us on this journey
-                to enhance safety and well-being, one step at a time.
-                With Safe Smart, safety is always within reach.</p>
-        </div>
-    
-        <!--Key Milestones-->
-        <div class="my-kemilestones" id="kemilestones">
-            <h2 class="section__title section__tittle--kemilestones">Key Milestones</h2>
-            <div class="kemilestones">
-            <div class="kemilestone">
-            <h3>Foundation & Initial Development</h3>
-            <p>Hiring key team members, including a UX
-                Designer, Sales Development
-                Representative (SDR), and Developer.            
-            </p>
-            </div>
-    
-            <div class="kemilestone">
-            <h3>Prototype & Testing</h3>
-            <p>Complete the initial prototype of the Safe Smart
-                bracelet. This will be followed by a beta testing phase
-                with a select group of users to gather valuable feedback
-                and identify any issues
-            </p>
-            </div>
-    
-            <div class="kemilestone">
-            <h3>MVP Development & Marketing Preparation</h3>
-            <p>We will develop the Minimum Viable
-                Product (MVP) using insights from beta
-                testing, finalize our marketing strategy, and
-                form strategic partnerships to enhance
-                market reach and credibility.
-            </p>
-            </div>
-    
-            <div class="kemilestone">
-                <h3>Launch & MarketExpansion</h3>
-                <p>we will officially launch Safe Smart with an
-                    aggressive marketing campaign, gather
-                    customer feedback, and monitor sales and
-                    market penetration, making necessary
-                    adjustments to maximize growth and impact.                
-                </p>
-                </div>
-            </div>
-            <a href="#myWork" class="btn">My work</a>
-        </div>
-    
-        <!---->
-        <div class="mession-sec">
-            <h1>Our Mission</h1>
-            <div class="mession-sec-container">
-                <div class="mession-sec-left">
-                    <img src="../contextImg/watch.png" alt="">
-                </div>
-                <div class="mession-sec-right">
-                    <p>To
-                        empower individuals with
-                        cutting-edge technology that
-                        prioritizes safety and well-being,
-                        creating a world free from fear
-                        and uncertainty</h1>
-                    </p>
-            </div>
-    
-        </div>
-        </section>
+    <div class="wrapper"></div>
+  
+  <div class="scroll-cards">
+    <img class="scroll-cards-img" src="/contextImg/img2.jpg" alt="">
+    <img class="scroll-cards-img-bottom" src="/contextImg/img2.jpg" alt="">
+    <article class="scroll-cards__item" aria-label="Wie - 1">
+      <h2>monitors your heart rate AND STUGGLE DECTECTION</h2>
+      <hr>
+      <p>Continuous Heart Rate Monitoring: Real-time updates to track your heart health.</p>
+      <P>Struggle Detection Senses physical struggles and sends instant alerts.</P>
+    </article>
+    <article class="scroll-cards__item" aria-label="Wie - 1">
+      <h2>Real-Time Alerts and Easy-to-Use Interface</h2>
+      <hr>
+      <p>Real-Time Alerts: Immediate notifications to your contacts or emergency services.</p>
+      <p>Easy-to-Use Interface: Simple navigation for all essential functions.</p>
+    </article>
+    <article class="scroll-cards__item" aria-label="Wie - 1">
+      <h2>Discreet Design and Long Battery Life.</h2>
+      <hr>
+      <p>Discreet Design: Sleek and stylish, blending seamlessly with any attire.</p>
+      <p>Long Battery Life: Extended battery for reliable, continuous protection.</p>
+    </article>
+    <article class="scroll-cards__item" aria-label="Wie - 1">
+      <h2>Customizable Alerts and Secure Data Encryption</h2>
+      <hr>
+      <p>Customizable Alerts: Personalize who gets alerts and under what conditions.</p>
+      <p>Secure Data Encryption: Top-tier encryption ensures your data is safe</p>
+    </article>
+    <article class="scroll-cards__item" aria-label="Wie - 1">
+      <h2>Water-Resistant and Mobile App Sync </h2>
+      <hr>
+      <p>Water-Resistant: Reliable protection in all weather and activities</p>
+      <p>Mobile App Sync: Sync with our app for detailed health and safety insights</p>
+    </article>  
+  </div>
+</div>
+<!-- partial -->
 
     <!-- Footer section -->
           <!-- Footer section -->

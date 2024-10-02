@@ -86,7 +86,7 @@
 @media (min-width: 800px) {
 .about-me {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1500px;
   margin:0 auto;
   padding: 2%;
   display: grid;
@@ -113,7 +113,6 @@
     .section__subtitle--about {
         grid-column: 1 / -1;
         grid-row: 2;
-        position: relative;
         left: -1em;
         padding-left: 1em;
         padding-right: calc(200px + 5em);
