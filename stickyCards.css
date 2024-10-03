@@ -55,7 +55,7 @@ hr {
   --offset: 0.5em;
   color: #000;
   position: sticky;
-  top: max(10vh, 7em);
+  top: max(7vh, 5em);
   padding: 2em 1.5em;  
   min-height: 19em;
   background: #fff;
