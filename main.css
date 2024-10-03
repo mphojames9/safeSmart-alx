@@ -696,6 +696,22 @@ header .header-content .place-selection-section p{
   }
 }
 
+/*About us button */
+.about-us-button {
+  width: 250px;
+  height: 50px;
+  margin: 0 auto;
+  background-color: var(--crl-main);
+  padding: 10px;
+  text-align: center;
+  
+}
+
+.about-us-button a {
+  text-decoration: none;
+  color: white;
+}
+
 /*Founder Section*/
 .founder h1{
   width: 100%;
