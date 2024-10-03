@@ -696,3 +696,60 @@ header .header-content .place-selection-section p{
   }
 }
 
+/*Founder Section*/
+.founder h1{
+  width: 100%;
+  text-align: center;
+  padding: 1em;
+}
+
+.founder-content {
+  max-width: 1400px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: .5em;
+  margin: 0 auto;
+}
+
+.founder-content-left{
+  width: 50%;
+  min-height: 400px;
+  height: fit-content;
+}
+
+.founder-content-left h2{
+  width: 100%;
+  text-align: center;
+  padding: .5em;
+
+}
+
+.founder-content-right{
+  width: 50%;
+  min-height: 400px;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.founder-content-right .profile-pic{
+  width: 250px;
+}
+
+@media(max-width:800px){
+  .founder-content {
+    flex-direction: column;
+    }
+
+    .founder-content-left{
+      width: 100%;
+      min-height: 300px;
+    }
+    
+    
+    .founder-content-right{
+      width: 100%;
+    }
+}
