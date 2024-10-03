@@ -709,7 +709,13 @@ header .header-content .place-selection-section p{
   display: flex;
   flex-direction: row;
   padding: .5em;
-  margin: 0 auto;
+  margin: 0;
+}
+
+.founder h2{
+  width: 100%;
+  text-align: center;
+  padding: .5em;
 }
 
 .founder-content-left{
@@ -722,7 +728,6 @@ header .header-content .place-selection-section p{
   width: 100%;
   text-align: center;
   padding: .5em;
-
 }
 
 .founder-content-right{
