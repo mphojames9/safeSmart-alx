@@ -725,7 +725,7 @@ header .header-content .place-selection-section p{
   display: flex;
   flex-direction: row;
   padding: .5em;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .founder h2{
