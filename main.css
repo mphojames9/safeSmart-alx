@@ -698,18 +698,80 @@ header .header-content .place-selection-section p{
 
 /*About us button */
 .about-us-button {
-  width: 250px;
+  width: 280px;
   height: 50px;
   margin: 0 auto;
   background-color: var(--crl-main);
   padding: 10px;
   text-align: center;
-  
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  cursor: pointer;
+  transition: 250ms ease-in-out;
+}
+
+.about-us-button:hover {
+  transform: scale(1.05);
+}
+.about-us-button:active {
+  transform: scale(0.95);
 }
 
 .about-us-button a {
   text-decoration: none;
   color: white;
+
+}
+
+.about-us-button .founder-arrow {
+  color: var(--clr-accent);
+  padding: 5px;
+  position: absolute;
+  right: 15px;
+  font-size: 1.5em;
+  top: 6px;
+  animation: slideRight 2s infinite;
+}
+
+.about-us-button .founder-arrow-2 {
+  color: var(--clr-accent);
+  padding: 5px;
+  position: absolute;
+  right: 15px;
+  font-size: 1.5em;
+  top: 6px;
+  animation: slideRight-2 2s infinite;
+}
+
+@keyframes slideRight {
+  0% {
+    right: 0px;
+    color: white;
+  }
+  50% {
+    right: 10px;
+    color: var(--clr-accent)
+  }
+  100%{
+    right: 0px;
+    color: white;
+  }
+}
+
+@keyframes slideRight-2 {
+  0% {
+    right: 4px;
+    color: white;
+  }
+  50% {
+    right: 20px;
+    color: var(--clr-accent)
+  }
+  100%{
+    right: 5px;
+    color: white;
+  }
 }
 
 /*Founder Section*/
