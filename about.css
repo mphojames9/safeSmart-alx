@@ -1,3 +1,26 @@
+/*custom properties*/
+:root {
+    --ff--primary: outfit;
+  
+    --fw-reg: 300;
+    --fw-bold: 900;
+  
+    --clr-light: #ffffff;
+    --clr-dark: #24262b;
+    --clr-accent: #cf9c4e;
+    --clr-button: rgb(220, 34, 34);
+    --crl-main: rgb(6, 5, 9);
+  
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+    --bs: 1.25em 1.25em 1.75em rgba(51, 72, 189, 0.123),
+          1.125em 1.125em 1.25em rgba(70, 97, 136, 0.082);
+    --ts: 1px 3px 1px rgb(88, 67, 67);
+  }
+
+
 .about-us h1 {
     width: 100%;
     text-align: center;
@@ -50,12 +73,118 @@
     font-weight: var(--fw-bold);
     transition: transform 200ms ease-in-out;
     border-radius: 4px;
-    
 }
-
 .btn:hover {
     transform: scale(1.1);
 }
+
+
+
+#header{
+    margin:20px;
+  }
+  #header>h1{
+    text-align:center;
+    font-size:3rem;
+  }
+  #header>p{
+    text-align:center;
+    font-size:1.5rem;
+    font-style:italic;
+  }
+  .container{
+    width:100vw;
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    gap: 3em;
+    margin-bottom: 10em;
+  }
+  .card{
+    display:flex;
+    flex-direction:column;
+    width:400px;
+    margin-bottom:60px;
+  }
+  .card>div{
+    box-shadow:0 15px 20px 0 var(--crl-main);
+  }
+  .card-image{
+    width:400px;
+    height:250px;
+  }
+  .card-image>img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:bottom;
+  }
+  .card-text{
+    margin:-30px auto;
+    margin-bottom:-50px;
+    height:300px;
+    width:300px;
+    background-color:var(--crl-main);
+    color:#fff;
+    padding:20px;
+  }
+
+  .card-title{
+    font-size:2.2rem;
+    margin-bottom:20px;
+    margin-top:5px;
+  }
+@media (max-width:450px){
+    #header{
+        margin:20px auto;
+      }
+      #header>h1{
+        text-align:center;
+        font-size:2rem;
+      }
+
+    .container{
+        width:100%;
+        gap: 3em;
+        margin-bottom: 4em;
+      }
+      .card{
+        width:100%;
+        margin-bottom:60px;
+      }
+
+      .card-image{
+        width:100%;
+        height:100%;
+      }
+
+      .card-text{
+        margin:-30px auto;
+        margin-bottom:-50px;
+        height:250px;
+        width:250px;
+        background-color:var(--crl-main);
+        color:#fff;
+        padding:20px;
+      }
+
+      .card-title{
+        font-size:1.2rem;
+        margin-bottom:20px;
+        margin-top:5px;
+      }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* My kemilestones */
@@ -97,31 +226,6 @@
     margin-bottom: 10px;
 }
 
-.mession-sec-container{
-    display: flex;
-    width: 100%;
-    min-height: 280px;
-    gap: 5em;
-    justify-content: center;
-    padding: 2em;
-}
-
-.mession-sec-container .mession-sec-left{
-    width: 50%;
-    max-width: 350px;
-}
-
-.mession-sec-container .mession-sec-left img{
-    width: 300px;
-}
-
-.mession-sec-container .mession-sec-right{
-    width: 50%;
-    font-weight: 100;
-    font-size: 24px;
-    font-weight: 500;
-    max-width: 350px;
-}
 
 @media (min-width: 800px) {
     .kemilestones {
@@ -138,59 +242,61 @@
 
 }
 
-@media (max-width: 799px){
-    .mession-sec-container{
-        flex-direction: row;
-        gap: 3em;
-
-    }
-
-        .mession-sec-container .mession-sec-left{
-            width: 40%;
-            max-width: 280px;
-        }
-
-        .mession-sec-container .mession-sec-left img{
-            width: 280px;
-        }
-        
-        .mession-sec-container .mession-sec-right{
-            width: 60%;
-            max-width: 350px;
-        }
-    }
-
-    @media (max-width: 600px){
-        .mession-sec-container{
-            flex-direction: row;
-            gap: 0;
-            position: relative;
-            padding-top: 0;
-            height: 500px;
-    
-        }
-    
-            .mession-sec-container .mession-sec-left{
-                max-width: 280px;
-                position: absolute;
-                top: 0;
-                left:0 ;
-                margin-top: -2em;
-            }
-    
-            .mession-sec-container .mession-sec-left img{
-                width: 280px;
-            }
-            
-            .mession-sec-container .mession-sec-right{
-                width: 100%;
-                position: absolute;
-                bottom: 0;
-                right: 0;
-                padding: 10px;
-                font-size: 23px;
-                float: right;
-            }
-        }
-
-
+.mission-content {
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: .5em;
+    margin: 3em auto;
+  }
+  
+  
+  .mission-content-left{
+    width: 50%;
+    min-height: 400px;
+    height: fit-content;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  .mission-content-left h2{
+    width: 100%;
+    text-align: center;
+    padding: .5em;
+  }
+  
+  .mission-content-right{
+    width: 50%;
+    min-height: 400px;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .mission-content-right .mission-img{
+    width: 100%;
+    height: 350px;
+    box-shadow:0 15px 20px 0 var(--crl-main);
+  }
+  
+  
+  @media(max-width:800px){
+    .mission-content {
+      flex-direction: column;
+      }
+  
+      .mission-content-left{
+        width: 100%;
+        min-height: 200px;
+        padding: .2em;
+        font-weight: 200;
+      }
+      
+      
+      .mission-content-right{
+        width: 100%;
+      }
+  }
+  
