@@ -1,5 +1,5 @@
-
-.our-services-h1 {
+/*Our service contect*/
+.our-services-h1, .sa-problem-section-h1 {
     width: 100%;
     text-align: center;
     font-size: 2.5em;
@@ -16,7 +16,6 @@ hr {
     max-width: 1400px;
     min-height: 400px;
     margin: 2em auto ;
-    margin-right: 0;
     display: flex;
 }
 
@@ -82,7 +81,6 @@ hr {
   }
 
   @media(max-width:1090px){
-
     .our-services-content-right {
         width: 50%;
         height: 1000px;
@@ -150,5 +148,84 @@ hr {
     .our-services-content-mainImg {
         width: 100%;
         height: 300px;
+    }
+  }
+  /*end of our service contect*/
+
+  .sa-problem-container {
+    max-width: 1400px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: fit-content;
+    margin: 5em auto;
+  }
+
+  .sa-problem-container-left {
+    width: 50%;
+    height: inherit;
+    padding: 1.5em;
+  }
+
+  .sa-problem-container-right {
+    width: 50%;
+    height: inherit;
+  }
+
+  .sa-problem-container-right h2 {
+    width: 100%;
+    padding: 1em;
+    text-align: center;
+  }
+
+  .sa-problem-container-right-img {
+    width: 400px;
+    height: 300px;
+    margin: 5em auto;
+  }
+
+  .sa-problem-container-right-img img{
+    width: 100%;
+    height: 100%;
+  }
+
+  .salution {
+    flex-direction: row-reverse;
+  }
+
+  @media(max-width:800px){
+
+    .sa-problem-section{
+      width: 100%;
+      height: fit-content;
+    }
+
+    .sa-problem-container {
+      flex-direction: column-reverse;
+    }
+
+    
+  .sa-problem-container-left {
+    width: 100%;
+    height: fit-content;
+    padding: 1.5em;
+
+  }
+
+  .sa-problem-container-right {
+    width: 100%;
+    height: fit-content;
+  }
+
+  .sa-problem-container-right-img{
+    height: fit-content;
+  }
+  }
+
+  @media(max-width:400px){
+    .sa-problem-container-right-img {
+      width: 100%;
+      height: 250px;
+      margin: 5em auto;
     }
   }

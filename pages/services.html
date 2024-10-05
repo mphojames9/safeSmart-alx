@@ -1,205 +1,271 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="UTF-8">
-   <title>Safe Smart</title>
-    <link rel="stylesheet" href="../main.css"> 
-    <link rel="stylesheet" href="../footer.css"> 
-    <link rel="stylesheet" href="../services.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   </head>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Safe Smart</title>
+  <link rel="stylesheet" href="../main.css">
+  <link rel="stylesheet" href="../footer.css">
+  <link rel="stylesheet" href="../services.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
 <body>
-     <!--Navigation bar-->
-      <nav>
-        <div class="navbar">
-          <i class='bx bx-menu'></i>
-          <div class="logo">
-            <img src="../logo/safe_smart_logo.png" alt="" class="main-logo">
-            <a href="#">safe<span class="logo-deco">Sma</span>rt</a></div>
-          <div class="nav-links">
-            <div class="sidebar-logo">
-              <div class="logo">safe<span class="logo-deco">Sma</span>rt</div>
-              <i class='bx bx-x' ></i>
-            </div>
-            <ul class="links">
-              <li><a href="../index.html">Home</a></li>
-              <li>
-                <a href="../pages/services.html">Services</a>
-                <i class='bx bxs-chevron-down htmlcss-arrow arrow'></i>
-                <ul class="htmlCss-sub-menu sub-menu">
+  <!--Navigation bar-->
+  <nav>
+    <div class="navbar">
+      <i class='bx bx-menu'></i>
+      <div class="logo">
+        <img src="../logo/safe_smart_logo.png" alt="" class="main-logo">
+        <a href="#">safe<span class="logo-deco">Sma</span>rt</a>
+      </div>
+      <div class="nav-links">
+        <div class="sidebar-logo">
+          <div class="logo">safe<span class="logo-deco">Sma</span>rt</div>
+          <i class='bx bx-x'></i>
+        </div>
+        <ul class="links">
+          <li><a href="../index.html">Home</a></li>
+          <li>
+            <a href="../pages/services.html">Services</a>
+            <i class='bx bxs-chevron-down htmlcss-arrow arrow'></i>
+            <ul class="htmlCss-sub-menu sub-menu">
+              <li><a href="#">Service</a></li>
+              <li><a href="#">Service</a></li>
+              <li><a href="#">Service</a></li>
+              <li><a href="#">Service</a></li>
+              <li class="more">
+                <span><a href="#">More</a>
+                  <i class='bx bxs-chevron-right arrow more-arrow'></i>
+                </span>
+                <ul class="more-sub-menu sub-menu">
                   <li><a href="#">Service</a></li>
                   <li><a href="#">Service</a></li>
                   <li><a href="#">Service</a></li>
-                  <li><a href="#">Service</a></li>
-                  <li class="more">
-                    <span><a href="#">More</a>
-                    <i class='bx bxs-chevron-right arrow more-arrow'></i>
-                  </span>
-                    <ul class="more-sub-menu sub-menu">
-                      <li><a href="#">Service</a></li>
-                      <li><a href="#">Service</a></li>
-                      <li ><a href="#">Service</a></li>
-                    </ul>
-                  </li>
                 </ul>
               </li>
-              <li>
-                <a href="#">Safe Smart</a>
-                <i class='bx bxs-chevron-down js-arrow arrow '></i>
-                <ul class="js-sub-menu sub-menu">
-                  <li><a href="../pages/about.html">About us</a></li>
-                  <li><a href="#">The Salution</a></li>
-                  <li><a href="#">Key Milestones</a></li>
-                  <li><a href="#">Founders</a></li>
-                  </ul>
-                </li>
-                <li><a href="../pages/contactus.html">Contact Us</a></li>
-              </ul>
-            </div>
-            <button class="sign-in-button">Sign in</button>
-        </div>
-      </nav>
-      <!--End of navigation bar-->
+            </ul>
+          </li>
+          <li>
+            <a href="#">Safe Smart</a>
+            <i class='bx bxs-chevron-down js-arrow arrow '></i>
+            <ul class="js-sub-menu sub-menu">
+              <li><a href="../pages/about.html">About us</a></li>
+              <li><a href="#">The Salution</a></li>
+              <li><a href="#">Key Milestones</a></li>
+              <li><a href="#">Founders</a></li>
+            </ul>
+          </li>
+          <li><a href="../pages/contactus.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <button class="sign-in-button">Sign in</button>
+    </div>
+  </nav>
+  <!--End of navigation bar-->
 
-<!--Login popup form-->
-<div class='login-popup'>
-  <form action="" class='login-popup-container'>
+  <!--Login popup form-->
+  <div class='login-popup'>
+    <form action="" class='login-popup-container'>
       <div class="login-popup-title">
-          <h2>Login</h2>
-          <img class="closeLoginForm" src="../icons/cross_icon.png" alt="" />
+        <h2>Login</h2>
+        <img class="closeLoginForm" src="../icons/cross_icon.png" alt="" />
       </div>
       <div class="login-popup-inputs">
-          <input type='email' placeholder='Your email' required />
-          <input type='password' placeholder='Password' required />
+        <input type='email' placeholder='Your email' required />
+        <input type='password' placeholder='Password' required />
       </div>
       <button>Login</button>
       <div class="login-popup-condition">
-          <input type='checkbox' required></input>
-          <p>By continuing, I agree to the terms of use & privacy policy</p>
+        <input type='checkbox' required></input>
+        <p>By continuing, I agree to the terms of use & privacy policy</p>
       </div>
       <div onclick="" style="display: flex;gap: 4px;">
         <p>Create a new account?</p>
         <a href="" class="Create-new-account-button">Click here</a>
       </div>
-      </form>
-    </div>
-<!--End of Login popup form-->
+    </form>
+  </div>
+  <!--End of Login popup form-->
 
-    <!--Services section-->
-    <section class="our-services">
-      <h1 class="our-services-h1">Our Services</h1>
-      <hr/>
-      <div class="our-services-content">
-        <div class="our-services-content-left">
-          <img src="../contextImg/about.jpg" alt="" class="our-services-content-mainImg">
-          <div class="our-service-content-card" id="our-service-content-card-id-1">
-            <div class="our-service-content-card-image">
-              <p>
-                We provide a continuous Heart Rate Monitoring tracking your heart health and
-                using our advanced technology to detect physical struggles and sends instant alerts in real time.
-              </p>
-            </div>
-            <div class="our-service-content-card-text">
-              <img src="../contextImg/detact.png" alt="">
-            </div>
+  <!--Services section-->
+  <section class="our-services">
+    <h1 class="our-services-h1">Our Services</h1>
+    <hr />
+    <div class="our-services-content">
+      <div class="our-services-content-left">
+        <img src="../contextImg/about.jpg" alt="" class="our-services-content-mainImg">
+        <div class="our-service-content-card" id="our-service-content-card-id-1">
+          <div class="our-service-content-card-image">
+            <p>
+              We provide a continuous Heart Rate Monitoring tracking your heart health and
+              using our advanced technology to detect physical struggles and sends instant alerts in real time.
+            </p>
+          </div>
+          <div class="our-service-content-card-text">
+            <img src="../contextImg/detact.png" alt="">
           </div>
         </div>
-        <div class="our-services-content-right">
-          <div class="our-service-content-card">
-            <div class="our-service-content-card-image">
-              <p>
-                We provide a continuous Heart Rate Monitoring tracking your heart health and
-                using our advanced technology to detect physical struggles and sends instant alerts in real time.
-              </p>
-            </div>
-            <div class="our-service-content-card-text">
-              <img src="../contextImg/heathIcon.jpg" alt="">
-            </div>
+      </div>
+      <div class="our-services-content-right">
+        <div class="our-service-content-card">
+          <div class="our-service-content-card-image">
+            <p>
+              We provide a continuous Heart Rate Monitoring tracking your heart health and
+              using our advanced technology to detect physical struggles and sends instant alerts in real time.
+            </p>
           </div>
-            <div class="our-service-content-card">
-              <div class="our-service-content-card-image">
-                <p>
-                  We provides 
-                  immediate assistance during
-                  emergencies and continuous health
-                  monitoring to our clients
-                </p>
-              </div>
-              <div class="our-service-content-card-text">
-                <img src="../contextImg/healthMonitor.jpg" alt="">
-              </div>
-            </div>
-              <div class="our-service-content-card">
-              <div class="our-service-content-card-image">
-                <p>
-                  We fight against gender based violance and human trafiction.
-                  Providing agent assistance to those who need it most. 
-                </p>
-              </div>
-              <div class="our-service-content-card-text">
-                <img src="../contextImg/violence.png" alt="">
-              </div>
-            </div>
-            <div class="our-service-content-card" id="our-service-content-card-id">
-              <div class="our-service-content-card-image">
-                <p>
-                   We provide a continuous Heart Rate Monitoring tracking your heart health and
-                  using our advanced technology to detect physical struggles and sends instant alerts in real time.
-                </p>
-              </div>
-              <div class="our-service-content-card-text">
-                <img src="../contextImg/detact.png" alt="">
-              </div>
-            </div>
+          <div class="our-service-content-card-text">
+            <img src="../contextImg/heathIcon.jpg" alt="">
+          </div>
+        </div>
+        <div class="our-service-content-card">
+          <div class="our-service-content-card-image">
+            <p>
+              We provides
+              immediate assistance during
+              emergencies and continuous health
+              monitoring to our clients
+            </p>
+          </div>
+          <div class="our-service-content-card-text">
+            <img src="../contextImg/healthMonitor.jpg" alt="">
+          </div>
+        </div>
+        <div class="our-service-content-card">
+          <div class="our-service-content-card-image">
+            <p>
+              We fight against gender based violance and human trafiction.
+              Providing agent assistance to those who need it most.
+            </p>
+          </div>
+          <div class="our-service-content-card-text">
+            <img src="../contextImg/violence.png" alt="">
+          </div>
+        </div>
+        <div class="our-service-content-card" id="our-service-content-card-id">
+          <div class="our-service-content-card-image">
+            <p>
+              We provide a continuous Heart Rate Monitoring tracking your heart health and
+              using our advanced technology to detect physical struggles and sends instant alerts in real time.
+            </p>
+          </div>
+          <div class="our-service-content-card-text">
+            <img src="../contextImg/detact.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!--south african problem section-->
+    <section class="sa-problem-section">
+      <h1 class="sa-problem-section-h1">South African Problem</h1>
+      <div class="sa-problem-container">
+        <div class="sa-problem-container-left">
+          <p>
+            South Africa faces alarmingly high rates of
+            gender-based violence and human
+            trafficking, with many cases going
+            unreported and victims often lacking
+            timely assistance.<br /> Additionally, there is a
+            growing need for continuous health
+            monitoring, particularly for those at risk of
+            sudden health crises.<br /> Current safety
+            devices fail to provide a comprehensive
+            solution, leaving individuals vulnerable
+            and without immediate help during
+            emergencies.
+          </p>
+        </div>
+        <div class="sa-problem-container-right">
+          <h2>Kidnappings</h2>
+          <div class="sa-problem-container-right-img">
+            <img src="../contextImg/graph.JPG" alt="">
+          </div>
+
         </div>
       </div>
 
+      <div class="sa-problem-container salution">
+        <div class="sa-problem-container-left">
+          <p>
+            Safe Smart offers a wearable bracelet
+            designed to integrate personal safety
+            and health monitoring.<br/> It includes
+            features such as physical struggle
+            detection and real-time alerts,
+            addressing urgent needs in South
+            Africa through advanced technology.<br/><br>
+            This solution provides users with
+            immediate assistance during
+            emergencies and continuous health
+            monitoring, enhancing overall safety
+            and well-being.<br/> To prevent false
+            alarms, Safe Smart incorporates a
+            double verification system, ensuring
+            reliable and accurate alerts when
+            assistance is truly needed.
+          </p>
+        </div>
+        <div class="sa-problem-container-right">
+          <h2>The solution</h2>
+          <div class="sa-problem-container-right-img">
+            <img src="../contextImg/sulution.jpg" alt="">
+          </div>
+
+        </div>
+      </div>
       
     </section>
 
-  
 
-    <!-- Footer section -->
-          <!-- Footer section -->
-          <div class='footer' id='footer'>
-            <div class="footer-content">
-                <div class="footer-content-left">
-                    <img class='footer-logo' src="" alt='' />
-                    <p>Safe Smart is more than just a bracelet—it's your personal guardian,
-                      dedicated to enhancing your safety and well-being with cutting-edge technology. 
-                      By combining continuous heart rate monitoring, struggle detection, 
-                      and real-time alerts in a sleek, stylish design, Safe Smart ensures you
-                       can live your life confidently and securely. Join us in revolutionizing
-                        personal safety and experience the peace of mind that comes with
-                         knowing you are always protected. Stay safe, stay smart, every step of the way.
-                    </p>
-                    <div class="footer-social-icons">
-                        <img src="../socialMediaIcons/facebook_icon.png" alt='' />
-                        <img src="../socialMediaIcons/linkedin_icon.png" alt='' />
-                        <img src="../socialMediaIcons/twitter_icon.png" alt='' />
-                    </div>
-                </div>
-                <div class="footer-content-center">
-                    <h2>safe<span>Sma</span>rt</h2>
-                    <ul>
-                        <li>Home</li>
-                        <li>About us</li>
-                        <li>Services</li>
-                        <li>Privacy policy</li>
-                    </ul>
-                </div>
-                <div class="footer-content-right">
-                    <h2>Contact us</h2>
-                    <ul>
-                        <li>+2761 232 8466</li>
-                        <li>muwaniannie@gmail.com</li>
-                    </ul>
-                </div>
-            </div>
-            <hr />
-            <p class="footer-copyright">Copyright 2024 safesmart.co.za - All Right  Reserved</p>
-          </div>
-<script src="../main.js"></script>
+
+
+
+
+  <!-- Footer section -->
+  <!-- Footer section -->
+  <div class='footer' id='footer'>
+    <div class="footer-content">
+      <div class="footer-content-left">
+        <img class='footer-logo' src="" alt='' />
+        <p>Safe Smart is more than just a bracelet—it's your personal guardian,
+          dedicated to enhancing your safety and well-being with cutting-edge technology.
+          By combining continuous heart rate monitoring, struggle detection,
+          and real-time alerts in a sleek, stylish design, Safe Smart ensures you
+          can live your life confidently and securely. Join us in revolutionizing
+          personal safety and experience the peace of mind that comes with
+          knowing you are always protected. Stay safe, stay smart, every step of the way.
+        </p>
+        <div class="footer-social-icons">
+          <img src="../socialMediaIcons/facebook_icon.png" alt='' />
+          <img src="../socialMediaIcons/linkedin_icon.png" alt='' />
+          <img src="../socialMediaIcons/twitter_icon.png" alt='' />
+        </div>
+      </div>
+      <div class="footer-content-center">
+        <h2>safe<span>Sma</span>rt</h2>
+        <ul>
+          <li>Home</li>
+          <li>About us</li>
+          <li>Services</li>
+          <li>Privacy policy</li>
+        </ul>
+      </div>
+      <div class="footer-content-right">
+        <h2>Contact us</h2>
+        <ul>
+          <li>+2761 232 8466</li>
+          <li>muwaniannie@gmail.com</li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <p class="footer-copyright">Copyright 2024 safesmart.co.za - All Right Reserved</p>
+  </div>
+  <script src="../main.js"></script>
 </body>
+
 </html>
