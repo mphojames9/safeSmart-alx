@@ -61,6 +61,11 @@
      align-items: start;
      gap: 20px;
  }
+
+ .footer-content-left, .footer-content-right, .footer-content-center ul li a{
+    color: white;
+    text-decoration: none;
+}
  
  .footer-content-left li, .footer-content-right li, .footer-content-center li{
      list-style: none;

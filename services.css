@@ -1,0 +1,154 @@
+
+.our-services-h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 2.5em;
+    margin: 1em 0
+}
+
+hr {
+    height: 2px;
+    border: none;
+    background-color: var(--clr-button);
+}
+
+.our-services-content {
+    max-width: 1400px;
+    min-height: 400px;
+    margin: 2em auto ;
+    margin-right: 0;
+    display: flex;
+}
+
+.our-services-content-left {
+    width: 50%;
+    min-height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.our-services-content-mainImg {
+    width: 100%;
+    height: 600px;
+    padding: 1em;
+    max-width: 450px;
+}
+
+.our-services-content-right{
+    width:50%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    gap: 3em;
+}
+
+  .our-service-content-card{
+    display:flex;
+    flex-direction:column-reverse;
+    width:250px;
+  }
+  .our-service-content-card-image{
+    width:100%;
+    height:150px;
+    text-align: center;
+    color:balck;
+  }
+  .our-service-content-card-image>img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:bottom;
+  }
+  .our-service-content-card-text{
+    margin:30px auto;
+    height:80px;
+    width:80px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .our-service-content-card-text img {
+    width: 80px;
+  }
+
+  #our-service-content-card-id-1 {
+    margin: 8em auto;
+    display: none;
+  }
+
+  @media(max-width:1090px){
+
+    .our-services-content-right {
+        width: 50%;
+        height: 1000px;
+
+    }
+
+    #our-service-content-card-id-1 {
+        margin:6em auto;
+        display: flex;
+      }
+    
+    #our-service-content-card-id {
+        margin-bottom: 0.5em;
+        display: none;
+      }
+  }
+
+  @media(max-width:800px){
+    @media(max-width:1090px){
+        #our-service-content-card-id {
+            margin-top: 0.5em;
+          }
+      }
+
+    .our-services-content {
+        flex-direction: column;
+    }
+
+    .our-services-content-left {
+        flex-direction: column;
+        width: 100%;
+        padding: 3em;
+    }
+
+    .our-services-content-right {
+        flex-direction: row;
+        width: 100%;
+        height: fit-content;
+        padding: 1em;
+    }
+
+    #our-service-content-card-id-1 {
+        display: none;
+      }
+    
+    #our-service-content-card-id {
+        margin-bottom: 0.5em;
+        display: flex;
+      }
+  }
+
+  @media (max-width:550px){
+    .our-services-content-mainImg {
+        width: 100%;
+        height: 400px;
+    }
+  }
+
+
+  @media (max-width:450px){
+    .our-services-content-left {
+        min-height: inherit;
+    }
+
+    .our-services-content-mainImg {
+        width: 100%;
+        height: 300px;
+    }
+  }

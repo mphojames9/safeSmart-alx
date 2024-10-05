@@ -448,7 +448,7 @@ nav .navbar .links li .sub-menu li{
 
 /*header components */
 header {
-    background-color: rgba(6, 5, 9, 0.623);
+    background-color: rgba(6, 5, 9, 0.850);
     background-blend-mode: multiply;
     background-image: url("./background/dtno17-10.jpg");
     background-size:100% 100%;
