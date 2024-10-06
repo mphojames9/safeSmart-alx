@@ -1,128 +1,135 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="UTF-8">
-   <title>Safe Smart</title>
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="context.css">
-    <link rel="stylesheet" href="stickyCards.css">
-    <link rel="stylesheet" href="footer.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   </head>
-<body>
-      <!--Navigation bar-->
-      <nav>
-        <div class="navbar">
-          <i class='bx bx-menu'></i>
-          <div class="logo">
-            <img src="/logo/safe_smart_logo.png" alt="" class="main-logo">
-            <a href="#">safe<span class="logo-deco">Sma</span>rt</a></div>
-          <div class="nav-links">
-            <div class="sidebar-logo">
-              <div class="logo">safe<span class="logo-deco">Sma</span>rt</div>
-              <i class='bx bx-x' ></i>
-            </div>
-            <ul class="links">
-              <li><a href="#app-download">Home</a></li>
-              <li>
-                <a href="/pages/services.html">Services</a>
-                <i class='bx bxs-chevron-down htmlcss-arrow arrow' style="display: none;"></i>
-                <ul class="htmlCss-sub-menu sub-menu"  style="display: none;">
-                    <span>
-                    <i class='arrow more-arrow'></i>
-                  </span>
-                    <ul class="more-sub-menu sub-menu " >
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="#">Safe Smart</a>
-                <i class='bx bxs-chevron-down js-arrow arrow '></i>
-                <ul class="js-sub-menu sub-menu">
-                  <li><a href="./pages/about.html">About us</a></li>
-                  <li><a href="#founder">Founders</a></li>
-                  </ul>
-                </li>
-                <li><a href="/pages/contactus.html">Contact Us</a></li>
-              </ul>
-            </div>
-            <button class="sign-in-button">Sign in</button>
-        </div>
-      </nav>
-      <!--End of navigation bar-->
-    
-      <!--Login popup form-->
-      <div class='login-popup'>
-        <form action="" class='login-popup-container'>
-            <div class="login-popup-title">
-                <h2>Login</h2>
-                <img class="closeLoginForm" src="./icons/cross_icon.png" alt="" />
-            </div>
-            <div class="login-popup-inputs">
-                <input type='email' placeholder='Your email' required />
-                <input type='password' placeholder='Password' required />
-            </div>
-            <button>Login</button>
-            <div class="login-popup-condition">
-                <input type='checkbox' required></input>
-                <p>By continuing, I agree to the terms of use & privacy policy</p>
-            </div>
-            <div onclick="" style="display: flex;gap: 4px;">
-              <p>Create a new account?</p>
-              <a href="" class="Create-new-account-button">Click here</a>
-            </div>
-            </form>
-          </div>
-      <!--End of Login popup form-->
-    
-      <header>
-        <div class="header-content ">
-          <h1 class="header-content-h1"><span class="header-span">Subscribe.</span> Get updated. <span class="stay-healthy">Stay healthy.</span></h1>
-          <div class="header-subscribe-box-section">
-            <input class=search-place type="text" placeholder="Enter yout email address">
-            <button class="subscribe-button">
-              <i class='bx bx-bell'></i><p>Subscribe<p>
-            </button>
-          </div>
-          <div class="place-selection-section">
-            <div>
-              <h2>Safe Smart bracelet</h2>
-              <p>The discreet bracelet that monitors your safety and health in real-time.</p>
-              <div class="learn-more" style="position: relative; display: flex; flex-direction: column;height: 60px; ">
-                <p style="margin: 0;">Learn more</p>
-                <i class='bx bxs-chevron-down htmlcss-arrow-animate' style= "position:absolute; margin: 20px; left: 0; right: 0; bottom: 0; top:0;color: tomato; font-size: 30px; animation: 2s infinite vertival-movenent;"></i>
-              </div>
-            </div>
-          </div>
-        </div>    
-      </header>
-      <!--End of header-->
 
-      
-        <section class="about-me" id="about">
-        <h2 class="section__title section__title--about">What is Safe Smart bracelet?</h2>
-        <div class="section__subtitle section__subtitle--about">
-            <p class="section__subtitle section__subtitle--about-p">Safe Smart Watch</p>
-            </div>
-    
-        <div class="about-me__body">
-        <p>A discreet bracelet combining heart rate monitoring and Physical struggle detection.
-          It sends real-time alerts for immediate assistance, enhancing personal safety and health 
-          monitoring in South Africa
-        </p>
-        <h1 style="margin: 1em;">
-          Key Features of the Safe Smart Bracelet
-        </h1>
+<head>
+  <meta charset="UTF-8">
+  <title>Safe Smart</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="context.css">
+  <link rel="stylesheet" href="stickyCards.css">
+  <link rel="stylesheet" href="footer.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <!--Navigation bar-->
+  <nav>
+    <div class="navbar">
+      <i class='bx bx-menu'></i>
+      <div class="logo">
+        <img src="/logo/safe_smart_logo.png" alt="" class="main-logo">
+        <a href="#">safe<span class="logo-deco">Sma</span>rt</a>
+      </div>
+      <div class="nav-links">
+        <div class="sidebar-logo">
+          <div class="logo">safe<span class="logo-deco">Sma</span>rt</div>
+          <i class='bx bx-x'></i>
+        </div>
+        <ul class="links">
+          <li><a href="#app-download">Home</a></li>
+          <li>
+            <a href="/pages/services.html">Services</a>
+            <i class='bx bxs-chevron-down htmlcss-arrow arrow' style="display: none;"></i>
+            <ul class="htmlCss-sub-menu sub-menu" style="display: none;">
+              <span>
+                <i class='arrow more-arrow'></i>
+              </span>
+              <ul class="more-sub-menu sub-menu ">
+              </ul>
+          </li>
+        </ul>
+        </li>
+        <li>
+          <a href="#">Safe Smart</a>
+          <i class='bx bxs-chevron-down js-arrow arrow '></i>
+          <ul class="js-sub-menu sub-menu">
+            <li><a href="./pages/about.html">About us</a></li>
+            <li><a href="#founder">Founders</a></li>
+          </ul>
+        </li>
+        <li><a href="/pages/contactus.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <button class="sign-in-button">Sign in</button>
+    </div>
+  </nav>
+  <!--End of navigation bar-->
+
+  <!--Login popup form-->
+  <div class='login-popup'>
+    <form action="" class='login-popup-container'>
+      <div class="login-popup-title">
+        <h2>Login</h2>
+        <img class="closeLoginForm" src="./icons/cross_icon.png" alt="" />
+      </div>
+      <div class="login-popup-inputs">
+        <input type='email' placeholder='Your email' required />
+        <input type='password' placeholder='Password' required />
+      </div>
+      <button>Login</button>
+      <div class="login-popup-condition">
+        <input type='checkbox' required></input>
+        <p>By continuing, I agree to the terms of use & privacy policy</p>
+      </div>
+      <div onclick="" style="display: flex;gap: 4px;">
+        <p>Create a new account?</p>
+        <a href="" class="Create-new-account-button">Click here</a>
+      </div>
+    </form>
+  </div>
+  <!--End of Login popup form-->
+
+  <header>
+    <div class="header-content ">
+      <h1 class="header-content-h1"><span class="header-span">Subscribe.</span> Get updated. <span
+          class="stay-healthy">Stay healthy.</span></h1>
+      <div class="header-subscribe-box-section">
+        <input class=search-place type="text" placeholder="Enter yout email address">
+        <button class="subscribe-button">
+          <i class='bx bx-bell'></i>
+          <p>Subscribe
+          <p>
+        </button>
+      </div>
+      <div class="place-selection-section">
+        <div>
+          <h2>Safe Smart bracelet</h2>
+          <p>The discreet bracelet that monitors your safety and health in real-time.</p>
+          <div class="learn-more" style="position: relative; display: flex; flex-direction: column;height: 60px; ">
+            <p style="margin: 0;">Learn more</p>
+            <i class='bx bxs-chevron-down htmlcss-arrow-animate'
+              style="position:absolute; margin: 20px; left: 0; right: 0; bottom: 0; top:0;color: tomato; font-size: 30px; animation: 2s infinite vertival-movenent;"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--End of header-->
+
+
+  <section class="about-me" id="about">
+    <h2 class="section__title section__title--about">What is Safe Smart bracelet?</h2>
+    <div class="section__subtitle section__subtitle--about">
+      <p class="section__subtitle section__subtitle--about-p">Safe Smart Watch</p>
+    </div>
+
+    <div class="about-me__body">
+      <p>A discreet bracelet combining heart rate monitoring and Physical struggle detection.
+        It sends real-time alerts for immediate assistance, enhancing personal safety and health
+        monitoring in South Africa
+      </p>
+      <h1 style="margin: 1em;">
+        Key Features of the Safe Smart Bracelet
+      </h1>
     </div>
     <div class="about-me__img_sec" style="width: 400px; margin: 0 auto;">
-      <img src="./contextImg/watch.png"alt="" class="about-me__img"></img>
+      <img src="./contextImg/watch.png" alt="" class="about-me__img"></img>
     </div>
-    </section>
+  </section>
 
-    <div class="wrapper"></div>
-  
+<!--Scroll card section-->
+  <div class="wrapper"></div>
   <div class="scroll-cards">
     <img class="scroll-cards-img" src="./contextImg/img2.jpg" alt="">
     <img class="scroll-cards-img-bottom" src="./contextImg/4e436a2779f855011ddc1f1f87b15bc5.jpg" alt="">
@@ -155,88 +162,88 @@
       <hr>
       <p>Water-Resistant: Reliable protection in all weather and activities</p>
       <p>Mobile App Sync: Sync with our app for detailed health and safety insights</p>
-    </article>  
+    </article>
   </div>
-</div>
-<!-- partial -->
-
-
-<div class="about-us-button">
-  <a href="./pages/about.html">Read More About safeSmart</a>
-  <i class='bx bxs-chevron-right arrow founder-arrow'></i>
-  <i class='bx bxs-chevron-right arrow founder-arrow-2'></i>
-</div>
-
-
- <section class="founder" id="founder">
-  <h1>Founded by..<span>.</span></h1>
-  <h2>Muwani Mukwevho</h2>
-  <div class="founder-content">
-    <div class="founder-content-left">
-      <p>
-        Our team is led by Muwani Mukwevho, a passionate data science
-        enthusiast and a survivor of human trafficking, domestic violence,
-        and bullying.
-      </p>
-      <p style="margin-top: .5em;">Muwani’s personal experiences and dedication to
-        leveraging technology for safety drive our mission forward, ensuring
-        that Safe Smart remains a powerful and empathetic solution for
-        those in need.
-      </p>
-    </div>
-    <div class="founder-content-right">
-      <img src="./contextImg/founder.jpg" alt="" class="profile-pic">
-    </div>
   </div>
- </section>
 
-    <!-- Footer section -->
-          <!-- Footer section -->
-          <div class='footer' id='footer'>
-            <div class="footer-content">
-                <div class="footer-content-left">
-                    <img class='footer-logo' src="" alt='' />
-                    <p>Safe Smart is more than just a bracelet—it's your personal guardian,
-                      dedicated to enhancing your safety and well-being with cutting-edge technology. 
-                      By combining continuous heart rate monitoring, struggle detection, 
-                      and real-time alerts in a sleek, stylish design, Safe Smart ensures you
-                       can live your life confidently and securely. Join us in revolutionizing
-                        personal safety and experience the peace of mind that comes with
-                         knowing you are always protected. Stay safe, stay smart, every step of the way.
-                    </p>
-                    <div class="footer-social-icons">
-                        <img src="./socialMediaIcons/facebook_icon.png" alt='' />
-                        <img src="./socialMediaIcons/linkedin_icon.png" alt='' />
-                        <img src="./socialMediaIcons/twitter_icon.png" alt='' />
-                    </div>
-                </div>
-                <div class="footer-content-center">
-                    <h2>safe<span>Sma</span>rt</h2>
-                    <ul>
-                        <li>
-                          <a href="#">Home</a>
-                        </li>
-                        <li><a href="/pages/about.html">About us</a></li>
-                        <li>
-                          <a href="/pages/services.html">Services</a>
-                        </li>
-                        <li>
-                          <a href="/pages/contactus.html">Contact us</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-content-right">
-                    <h2>Contact us</h2>
-                    <ul>
-                        <li>+2761 232 8466</li>
-                        <li>muwaniannie@gmail.com</li>
-                    </ul>
-                </div>
-            </div>
-            <hr />
-            <p class="footer-copyright">Copyright &copy; 2024 safesmart.co.za - All Right  Reserved</p>
-          </div>
+  <!--About us button-->
+  <div class="about-us-button">
+    <a href="./pages/about.html">Read More About safeSmart</a>
+    <i class='bx bxs-chevron-right arrow founder-arrow'></i>
+    <i class='bx bxs-chevron-right arrow founder-arrow-2'></i>
+  </div>
 
-  <script src="index.js"></script>
+
+  <!--Founder section-->
+  <section class="founder" id="founder">
+    <h1>Founded by..<span>.</span></h1>
+    <h2>Muwani Mukwevho</h2>
+    <div class="founder-content">
+      <div class="founder-content-left">
+        <p>
+          Our team is led by Muwani Mukwevho, a passionate data science
+          enthusiast and a survivor of human trafficking, domestic violence,
+          and bullying.
+        </p>
+        <p style="margin-top: .5em;">Muwani’s personal experiences and dedication to
+          leveraging technology for safety drive our mission forward, ensuring
+          that Safe Smart remains a powerful and empathetic solution for
+          those in need.
+        </p>
+      </div>
+      <div class="founder-content-right">
+        <img src="./contextImg/founder.jpg" alt="" class="profile-pic">
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer section -->
+  <div class='footer' id='footer'>
+    <div class="footer-content">
+      <div class="footer-content-left">
+        <img class='footer-logo' src="" alt='' />
+        <p>Safe Smart is more than just a bracelet—it's your personal guardian,
+          dedicated to enhancing your safety and well-being with cutting-edge technology.
+          By combining continuous heart rate monitoring, struggle detection,
+          and real-time alerts in a sleek, stylish design, Safe Smart ensures you
+          can live your life confidently and securely. Join us in revolutionizing
+          personal safety and experience the peace of mind that comes with
+          knowing you are always protected. Stay safe, stay smart, every step of the way.
+        </p>
+        <div class="footer-social-icons">
+          <img src="./socialMediaIcons/facebook_icon.png" alt='' />
+          <img src="./socialMediaIcons/linkedin_icon.png" alt='' />
+          <img src="./socialMediaIcons/twitter_icon.png" alt='' />
+        </div>
+      </div>
+      <div class="footer-content-center">
+        <h2>safe<span>Sma</span>rt</h2>
+        <ul>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li><a href="/pages/about.html">About us</a></li>
+          <li>
+            <a href="/pages/services.html">Services</a>
+          </li>
+          <li>
+            <a href="/pages/contactus.html">Contact us</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-content-right">
+        <h2>Contact us</h2>
+        <ul>
+          <li>+2761 232 8466</li>
+          <li>muwaniannie@gmail.com</li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <p class="footer-copyright">Copyright &copy; 2024 safesmart.co.za - All Right Reserved</p>
+  </div>
+
+<script src="index.js"></script>
 </body>
+
 </html>
