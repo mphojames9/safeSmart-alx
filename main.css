@@ -33,6 +33,26 @@
   }
 }
 
+.in-view {
+  animation: 500ms fade;
+ 
+ }
+ 
+ .not-in-view{
+   opacity: 0;
+ }
+ 
+ @keyframes fade{
+   0%{
+     opacity: 0;
+     transform: translate(0, 1em);
+   }
+   100%{
+     opacity: 1;
+     transform: translate(0, 0);
+   }
+ }
+
 /*custom properties*/
 :root {
   --ff--primary: outfit;
