@@ -28,9 +28,9 @@
         <ul class="links">
           <li><a href="../index.html">Home</a></li>
           <li>
-            <a href="#">Services</a>
-            <i class='bx bxs-chevron-down htmlcss-arrow arrow'></i>
-            <ul class="htmlCss-sub-menu sub-menu">
+            <a href="../pages/services.html">Services</a>
+            <i class='bx bxs-chevron-down htmlcss-arrow arrow' style="display:none;"></i>
+            <ul class="htmlCss-sub-menu sub-menu" style="display:none;">
               <li><a href="#">Service</a></li>
               <li><a href="#">Service</a></li>
               <li><a href="#">Service</a></li>
@@ -39,7 +39,7 @@
                 <span><a href="#">More</a>
                   <i class='bx bxs-chevron-right arrow more-arrow'></i>
                 </span>
-                <ul class="more-sub-menu sub-menu">
+                <ul class="more-sub-menu sub-menu" style="display:none;">
                   <li><a href="#">Service</a></li>
                   <li><a href="#">Service</a></li>
                   <li><a href="#">Service</a></li>
@@ -52,9 +52,10 @@
             <i class='bx bxs-chevron-down js-arrow arrow '></i>
             <ul class="js-sub-menu sub-menu">
               <li><a href="#">About us</a></li>
-              <li><a href="#">The Salution</a></li>
-              <li><a href="#">Key Milestones</a></li>
-              <li><a href="#">Founders</a></li>
+              <li><a href="#header">Competitive advantage</a></li>
+              <li><a href="#kemilestones">Key Milestones</a></li>
+              <li><a href="#mission-section">Mission Statement</a></li>
+              <li><a href="#fund-raising">Fund Raising</a></li>
             </ul>
           </li>
           <li><a href="../pages/contactus.html">Contact Us</a></li>
@@ -64,6 +65,31 @@
     </div>
   </nav>
   <!--End of navigation bar-->
+
+  <!--Login popup form-->
+  <div class='login-popup'>
+    <form action="" class='login-popup-container'>
+      <div class="login-popup-title">
+        <h2>Login</h2>
+        <img class="closeLoginForm" src="../icons/cross_icon.png" alt="" />
+      </div>
+      <div class="login-popup-inputs">
+        <input type='email' placeholder='Your email' required />
+        <input type='password' placeholder='Password' required />
+      </div>
+      <button>Login</button>
+      <div class="login-popup-condition">
+        <input type='checkbox' required></input>
+        <p>By continuing, I agree to the terms of use & privacy policy</p>
+      </div>
+      <div onclick="" style="display: flex;gap: 4px;">
+        <p>Create a new account?</p>
+        <a href="" class="Create-new-account-button">Click here</a>
+      </div>
+    </form>
+  </div>
+  <!--End of Login popup form-->
+
 
   <!-- About us section -->
   <section class="about-us">
@@ -91,7 +117,7 @@
     </div>
 
     <!-- partial:index.partial.html -->
-    <div id="header">
+    <div id="header" >
       <h1>Competitive advantage</h1>
     </div>
     <div class="container">
@@ -174,7 +200,7 @@
     <!---->
 
     <!--Mision section-->
-    <section class="mission-section">
+    <section class="mission-section" id="mission-section">
       <h1 class="mission-section-h1">Our Mission</h1>
       <div class="mission-container">
         <div class="mission-container-left">
@@ -197,7 +223,7 @@
 
 
       <!--south african problem section-->
-      <section class="fund-raising-section">
+      <section class="fund-raising-section" id="fund-raising" >
         <h1 class="fund-raising-section-h1">Fund raising</h1>
         <div class="fund-raising-container salution">
           <div class="fund-raising-container-left">
@@ -242,10 +268,18 @@
           <div class="footer-content-center">
             <h2>safe<span>Sma</span>rt</h2>
             <ul>
-              <li>Home</li>
-              <li>About us</li>
-              <li>Services</li>
-              <li>Privacy policy</li>
+              <li>
+                <a href="../index.html">Home</a>
+              </li>
+              <li>
+                <a href="../pages/about.html">About us</a>
+              </li>
+              <li>
+                <a href="../pages/services.html">Services</a>
+              </li>
+              <li>
+                <a href="../pages/contactus.html">Contact us</a>
+              </li>
             </ul>
           </div>
           <div class="footer-content-right">
@@ -257,9 +291,9 @@
           </div>
         </div>
         <hr />
-        <p class="footer-copyright">Copyright 2024 safesmart.co.za - All Right Reserved</p>
+        <p class="footer-copyright">Copyright &copy; 2024 safesmart.co.za - All Right Reserved</p>
       </div>
-      <script src="../main.js"></script>
+      <script src="../index.js"></script>
 </body>
 
 </html>

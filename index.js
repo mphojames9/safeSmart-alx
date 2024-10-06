@@ -32,6 +32,7 @@ jsArrow.onclick = function() {
 const signupButton = document.querySelector(".sign-in-button")
 const loginForm = document.querySelector(".login-popup")
 const loginCloseButton = document.querySelector(".closeLoginForm")
+console.log(loginForm)
 
 //Open Login forn
 signupButton.addEventListener("click", ()=>{

@@ -29,13 +29,16 @@
           <li><a href="../index.html">Home</a></li>
           <li>
             <a href="../pages/services.html">Services</a>
-            <i class='bx bxs-chevron-down htmlcss-arrow arrow'></i>
+            <i class='bx bxs-chevron-down htmlcss-arrow arrow'  style="display: none;"></i>
             <ul class="htmlCss-sub-menu sub-menu">
+            <!--
               <li><a href="#">Service</a></li>
               <li><a href="#">Service</a></li>
               <li><a href="#">Service</a></li>
               <li><a href="#">Service</a></li>
-              <li class="more">
+            -->
+              
+              <li class="more"  style="display: none;">
                 <span><a href="#">More</a>
                   <i class='bx bxs-chevron-right arrow more-arrow'></i>
                 </span>
@@ -95,7 +98,9 @@
     <hr />
     <div class="our-services-content">
       <div class="our-services-content-left">
-        <img src="../contextImg/about.jpg" alt="" class="our-services-content-mainImg">
+        <div class="sa-problem-container-right-img">
+          <img src="../contextImg/about.jpg" alt="">
+        </div>
         <div class="our-service-content-card" id="our-service-content-card-id-1">
           <div class="our-service-content-card-image">
             <p>
@@ -248,10 +253,18 @@
       <div class="footer-content-center">
         <h2>safe<span>Sma</span>rt</h2>
         <ul>
-          <li>Home</li>
-          <li>About us</li>
-          <li>Services</li>
-          <li>Privacy policy</li>
+          <li>
+            <a href="../index.html">Home</a>
+          </li>
+          <li>
+            <a href="../pages/about.html">About us</a>
+          </li>
+          <li>
+            <a href="#">Services</a>
+          </li>
+          <li>
+            <a href="../pages/contactus.html">Contact us</a>
+          </li>
         </ul>
       </div>
       <div class="footer-content-right">
@@ -263,9 +276,9 @@
       </div>
     </div>
     <hr />
-    <p class="footer-copyright">Copyright 2024 safesmart.co.za - All Right Reserved</p>
+    <p class="footer-copyright">Copyright &copy; 2024 safesmart.co.za - All Right Reserved</p>
   </div>
-  <script src="../main.js"></script>
+  <script src="../index.js"></script>
 </body>
 
 </html>
