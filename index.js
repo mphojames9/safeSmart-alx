@@ -66,3 +66,19 @@ const tags = document.querySelectorAll('.fade')
 tags.forEach((tag) => {
   observer.observe(tag)
 })
+
+const readMoreBtn = document.querySelector("#readmoreBtn");
+let more = document.querySelector(".moreSec");
+
+readMoreBtn.addEventListener("click",()=>{
+
+  if (more.classList.contains("viewMore")){
+    more.classList.remove("viewMore")
+    readMoreBtn.innerHTML = `<p>Read More</p>
+            <i class='bx bxs-chevron-down htmlcss-arrow arrow'></i>`;
+  }else{
+    more.classList.add("viewMore")
+    readMoreBtn.innerHTML = `<p>Read Less</p>
+            <i class='bx bxs-chevron-up htmlcss-arrow arrow'></i>`;
+  }
+})
