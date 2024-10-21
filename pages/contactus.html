@@ -1,189 +1,220 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="UTF-8">
-   <title>Safe Smart</title>
-    <link rel="stylesheet" href="../main.css">
-    <link rel="stylesheet" href="../contactUs.css"> 
-    <link rel="stylesheet" href="../footer.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   </head>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Safe Smart</title>
+  <link rel="stylesheet" href="../main.css">
+  <link rel="stylesheet" href="../contactUs.css">
+  <link rel="stylesheet" href="../footer.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      // https://dashboard.emailjs.com/admin/account
+      emailjs.init({
+        publicKey: "drD2CBWiRuBzQGBEO",
+      });
+    })();
+  </script>
+  <script type="text/javascript">
+    window.onload = function () {
+      document.getElementById('contact-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        // these IDs from the previous steps
+        emailjs.sendForm('service_a7c5ag9', 'template_5bc1mt5', this)
+          .then(() => {
+            console.log('SUCCESS!');
+          }, (error) => {
+            console.log('FAILED...', error);
+          });
+      });
+    }
+  </script>
+
+</head>
+
 <body>
-      <!--Navigation bar-->
-      <nav>
-        <div class="navbar" fade>
-          <i class='bx bx-menu'></i>
-          <div class="logo">
-            <img src="../logo/safe_smart_logo.png" alt="" class="main-logo">
-            <a href="#">safe<span class="logo-deco">Sma</span>rt</a></div>
-          <div class="nav-links">
-            <div class="sidebar-logo">
-              <div class="logo fade">safe<span class="logo-deco">Sma</span>rt</div>
-              <i class='bx bx-x' ></i>
-            </div>
-            <ul class="links">
-              <li><a href="../index.html">Home</a></li>
-              <li>
-                <a href="#">Services</a>
-                <i class='bx bxs-chevron-down htmlcss-arrow arrow' style="display:none;"></i>
-                <ul class="htmlCss-sub-menu sub-menu" style="display:none;">
+  <!--Navigation bar-->
+  <nav>
+    <div class="navbar" fade>
+      <i class='bx bx-menu'></i>
+      <div class="logo">
+        <img src="../logo/safe_smart_logo.png" alt="" class="main-logo">
+        <a href="#">safe<span class="logo-deco">Sma</span>rt</a>
+      </div>
+      <div class="nav-links">
+        <div class="sidebar-logo">
+          <div class="logo fade">safe<span class="logo-deco">Sma</span>rt</div>
+          <i class='bx bx-x'></i>
+        </div>
+        <ul class="links">
+          <li><a href="../index.html">Home</a></li>
+          <li>
+            <a href="#">Services</a>
+            <i class='bx bxs-chevron-down htmlcss-arrow arrow' style="display:none;"></i>
+            <ul class="htmlCss-sub-menu sub-menu" style="display:none;">
+              <li><a href="#">Service</a></li>
+              <li><a href="#">Service</a></li>
+              <li><a href="#">Service</a></li>
+              <li><a href="#">Service</a></li>
+              <li class="more">
+                <span><a href="#">More</a>
+                  <i class='bx bxs-chevron-right arrow more-arrow'></i>
+                </span>
+                <ul class="more-sub-menu sub-menu">
                   <li><a href="#">Service</a></li>
                   <li><a href="#">Service</a></li>
-                  <li class="more">
-                    <span><a href="#">More</a>
-                    <i class='bx bxs-chevron-right arrow more-arrow'></i>
-                  </span>
-                    <ul class="more-sub-menu sub-menu">
-                      <li><a href="#">Service</a></li>
-                      <li><a href="#">Service</a></li>
-                      <li ><a href="#">Service</a></li>
-                    </ul>
-                  </li>
+                  <li><a href="#">Service</a></li>
                 </ul>
               </li>
-              <li>
-                <a href="#">Safe Smart</a>
-                <i class='bx bxs-chevron-down js-arrow arrow '></i>
-                <ul class="js-sub-menu sub-menu">
-                  <li><a href="../pages/about.html">About us</a></li>
-                  <li><a href="#" style="display:none;">The Salution</a> </li>
-                  <li><a href="#" style="display:none;">Key Milestones</a></li>
-                  <li><a href="#" style="display:none;">Founders</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Contact Us</a></li>
-              </ul>
-            </div>
-            <button class="sign-in-button">Sign in</button>
-        </div>
-      </nav>
-      <!--End of navigation bar-->
-    
- <!--Login popup form-->
- <div class='login-popup'>
-  <form action="" class='login-popup-container'>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Safe Smart</a>
+            <i class='bx bxs-chevron-down js-arrow arrow '></i>
+            <ul class="js-sub-menu sub-menu">
+              <li><a href="../pages/about.html">About us</a></li>
+              <li><a href="#" style="display:none;">The Salution</a> </li>
+              <li><a href="#" style="display:none;">Key Milestones</a></li>
+              <li><a href="#" style="display:none;">Founders</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <button class="sign-in-button">Sign in</button>
+    </div>
+  </nav>
+  <!--End of navigation bar-->
+
+  <!--Login popup form-->
+  <div class='login-popup'>
+    <form action="" class='login-popup-container'>
       <div class="login-popup-title">
-          <h2>Login</h2>
-          <img class="closeLoginForm" src="../icons/cross_icon.png" alt="" />
+        <h2>Login</h2>
+        <img class="closeLoginForm" src="../icons/cross_icon.png" alt="" />
       </div>
       <div class="login-popup-inputs">
-          <input type='email' placeholder='Your email' required />
-          <input type='password' placeholder='Password' required />
+        <input type='email' placeholder='Your email' required />
+        <input type='password' placeholder='Password' required />
       </div>
       <button>Login</button>
       <div class="login-popup-condition">
-          <input type='checkbox' required></input>
-          <p>By continuing, I agree to the terms of use & privacy policy</p>
+        <input type='checkbox' required></input>
+        <p>By continuing, I agree to the terms of use & privacy policy</p>
       </div>
       <div onclick="" style="display: flex;gap: 4px;">
         <p>Create a new account?</p>
         <a href="" class="Create-new-account-button">Click here</a>
       </div>
-      </form>
+    </form>
+  </div>
+  <!--End of Login popup form-->
+
+  <h1 style="text-align: center; padding: .5em; font-size: 3em;">Let<span>'</span>s talk</h1>
+  <hr />
+
+  <section class="contact_us_container fade">
+    <div class="content">
+      <div class="left-side fade">
+        <div class="address details">
+          <i class="fas fa-map-marker-alt"></i>
+          <div class="topic">Address</div>
+          <div class="text-one">Building 765 </div>
+          <div class="text-two">Pretoria central</div>
+          <div class="text-two">Gauteng 0001</div>
+        </div>
+        <div class="phone details">
+          <i class="fas fa-phone-alt"></i>
+          <div class="topic">Phone</div>
+          <div class="text-one">Muwani</div>
+          <div class="text-two">+2769 727 2511</div>
+        </div>
+        <div class="email details">
+          <i class="fas fa-envelope"></i>
+          <div class="topic">Email</div>
+          <div class="text-one">muwaniannie@gmail.com</div>
+        </div>
+      </div>
+      <div class="right-side fade">
+        <div class="topic-text" style="color: rgb(6, 5, 9); padding:10px">Send us a message</div>
+        <p style="color: rgb(6, 5, 9); padding:10px">If you have any types of quries, you can send us message here. One
+          of our consualtent will call you back.
+          It's my pleasure to help you.</p>
+
+        <form id="contact-form">
+          <div class="input-box">
+            <input type="text" placeholder="Enter your name">
+          </div>
+          <div class="input-box">
+            <input type="text" placeholder="Enter your email">
+          </div>
+          <div class="input-box">
+            <input type="text" placeholder="Phone number">
+          </div>
+          <div class="input-box message-box">
+            <textarea className="form-control" name="message" placeholder="Enter your message"></textarea>
+          </div>
+          <div class="button">
+            <input type="button" value="Submit">
+          </div>
+        </form>
+      </div>
     </div>
-<!--End of Login popup form-->
-
-      <h1 style="text-align: center; padding: .5em; font-size: 3em;">Let<span>'</span>s talk</h1>
-      <hr />
-
-      <section class="contact_us_container fade">
-        <div class="content">
-          <div class="left-side fade">
-            <div class="address details">
-              <i class="fas fa-map-marker-alt"></i>
-              <div class="topic">Address</div>
-              <div class="text-one">Building 765 </div>
-              <div class="text-two">Pretoria central</div>
-              <div class="text-two">Gauteng 0001</div>
-            </div>
-            <div class="phone details">
-              <i class="fas fa-phone-alt"></i>
-              <div class="topic">Phone</div>
-              <div class="text-one">Muwani</div>
-              <div class="text-two">+2769 727 2511</div>
-            </div>
-            <div class="email details">
-              <i class="fas fa-envelope"></i>
-              <div class="topic">Email</div>
-              <div class="text-one">muwaniannie@gmail.com</div>
-            </div>
-          </div>
-          <div class="right-side fade">
-            <div class="topic-text"style="color: rgb(6, 5, 9); padding:10px">Send us a message</div>
-            <p style="color: rgb(6, 5, 9); padding:10px">If you have any types of quries, you can send us message here. One of our consualtent will call you back.
-               It's my pleasure to help you.</p>
-          <form action="#">
-            <div class="input-box">
-              <input type="text" placeholder="Enter your name">
-            </div>
-            <div class="input-box">
-              <input type="text" placeholder="Enter your email">
-            </div>
-            <div class="input-box">
-              <input type="text" placeholder="Phone number">
-            </div>
-            <div class="input-box message-box">
-              <textarea className="form-control" name="message" placeholder="Enter your message"></textarea>
-            </div>
-            <div class="button">
-              <input type="button" value="Submit" >
-            </div>
-          </form>
-        </div>
-        </div>
-      </section>
+  </section>
 
 
-          <!-- Footer section -->
-<div class='footer fade' id='footer'>
-  <div class="footer-content">
+  <!-- Footer section -->
+  <div class='footer fade' id='footer'>
+    <div class="footer-content">
       <div class="footer-content-left">
-          <img class='footer-logo' src="" alt='' />
-          <p class="fade">Safe Smart is more than just a bracelet—it's your personal guardian,
-            dedicated to enhancing your safety and well-being with cutting-edge technology. 
-            By combining continuous heart rate monitoring, struggle detection, 
-            and real-time alerts in a sleek, stylish design, Safe Smart ensures you
-             can live your life confidently and securely. Join us in revolutionizing
-              personal safety and experience the peace of mind that comes with
-               knowing you are always protected. Stay safe, stay smart, every step of the way.
-          </p>
-          <div class="footer-social-icons">
-              <img src="../socialMediaIcons/facebook_icon.png" alt='' />
-              <img src="../socialMediaIcons/linkedin_icon.png" alt='' />
-              <img src="../socialMediaIcons/twitter_icon.png" alt='' />
-          </div>
+        <img class='footer-logo' src="" alt='' />
+        <p class="fade">Safe Smart: not just a bracelet, but your dedicated guardian, committed to elevating your safety
+          and well-being using state-of-the-art technology. With continuous heart rate monitoring, struggle detection,
+          and real-time alerts, all in a sleek and stylish design, Safe Smart ensures you can lead your life with
+          unwavering confidence and security. Join us in revolutionizing personal safety and experience the unmatched
+          peace of mind that comes with knowing you're always protected. Stay safe and stay smart every step of the way.
+        </p>
+        <div class="footer-social-icons">
+          <img src="../socialMediaIcons/facebook_icon.png" alt='' />
+          <img src="../socialMediaIcons/linkedin_icon.png" alt='' />
+          <img src="../socialMediaIcons/twitter_icon.png" alt='' />
+        </div>
       </div>
       <div class="footer-content-center fade">
-          <h2 class="fade">safe<span>Sma</span>rt</h2>
-          <ul>
-              <li>
-                <a href="../index.html">Home</a>
-              </li>
-              <li>
-                <a href="../pages/about.html">About us</a>
-              </li>
-              <li>
-                <a href="../pages/services.html">Services</a>
-              </li>
-              <li>
-                <a href="../pages/contactus.html">Contact us</a>
-              </li>
-          </ul>
+        <h2 class="fade">safe<span>Sma</span>rt</h2>
+        <ul>
+          <li>
+            <a href="../index.html">Home</a>
+          </li>
+          <li>
+            <a href="../pages/about.html">About us</a>
+          </li>
+          <li>
+            <a href="../pages/services.html">Services</a>
+          </li>
+          <li>
+            <a href="../pages/contactus.html">Contact us</a>
+          </li>
+        </ul>
       </div>
       <div class="footer-content-right fade">
-          <h2 class="fade">Contact us</h2>
-          <ul class="fade">
-              <li>+2769 727 2511</li>
-              <li>muwaniannie@gmail.com</li>
-          </ul>
+        <h2 class="fade">Contact us</h2>
+        <ul class="fade">
+          <li>+2769 727 2511</li>
+          <li>muwaniannie@gmail.com</li>
+        </ul>
       </div>
+    </div>
+    <hr />
+    <p class="footer-copyright fade">Copyright &copy; 2024 safesmart.co.za - All Right Reserved</p>
   </div>
-  <hr />
-  <p class="footer-copyright fade">Copyright &copy; 2024 safesmart.co.za - All Right  Reserved</p>
-</div>
 
 
   <script src="../index.js"></script>
 </body>
+
 </html>
