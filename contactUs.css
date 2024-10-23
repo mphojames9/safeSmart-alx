@@ -46,6 +46,27 @@ button {
   border: none;
 }
 
+#submitBtn {
+  background-color: var(--crl-main);
+  color: white;
+  width: 100px;
+  border: none;
+  padding: 2px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 300ms ease-in-out;
+}
+
+#submitBtn:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+#submitBtn:active {
+  transform: scale(0.95);
+  
+}
+
   hr {
     background-color: var(--clr-button);
     height: 3px;
@@ -125,7 +146,7 @@ button {
   height: 100%;
   width: 100%;
   border: none;
-  outline:1px solid var(--clr-accent);
+  outline:1px solid var(--crl-main);
   font-size: 16px;
   background: #F0F1F8;
   border-radius: 2px;

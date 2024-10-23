@@ -888,29 +888,6 @@ button.custom-toast {
   color: #fff;
 }
 
-button.custom-toast:hover {
-  filter: brightness(0.9);
-}
-
-button.success-toast {
-  background-color: #2ecc71;
-}
-
-button.danger-toast {
-  background-color: #e74c3c;
-}
-
-button.info-toast {
-  background-color: #3498db;
-}
-
-button.warning-toast {
-  background-color: #f1c40f;
-}
-
-h1 {
-  color: green;
-}
 
 .toast {
   position: fixed;
@@ -919,8 +896,7 @@ h1 {
   max-width: 300px;
   background: #fff;
   padding: 0.5rem;
-  border-radius: 4px;
-  box-shadow: -1px 1px 10px
+  box-shadow: 1px 1px 10px
       rgba(0, 0, 0, 0.3);
   z-index: 1023;
   animation: slideInRight 0.3s
@@ -960,33 +936,38 @@ h1 {
 
 .toast-message {
   flex: 1;
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #000000;
   padding: 0.5rem;
 }
 
 .toast.toast-success {
-  background: #95eab8;
+  background: white;
+  border: 1px solid green;
 }
 
 .toast.toast-success .toast-progress {
-  background-color: #2ecc71;
+  background-color: green;
 }
 
 .toast.toast-danger {
-  background: #efaca5;
+  background: white;
+  border: 1px solid red;
+
 }
 
 .toast.toast-danger .toast-progress {
-  background-color: #e74c3c;
+  background-color: red;
 }
 
 .toast.toast-info {
-  background: #bddaed;
+  background: white;
+  border: 1px solid orange;
 }
 
 .toast.toast-info .toast-progress {
-  background-color: #3498db;
+  background-color: orange;
+
 }
 
 .toast.toast-warning {
