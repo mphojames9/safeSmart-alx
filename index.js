@@ -1,3 +1,4 @@
+
 // search-box open
 let navbar = document.querySelector(".navbar");
 
@@ -32,7 +33,6 @@ jsArrow.onclick = function() {
 const signupButton = document.querySelector(".sign-in-button")
 const loginForm = document.querySelector(".login-popup")
 const loginCloseButton = document.querySelector(".closeLoginForm")
-console.log(loginForm)
 
 //Open Login forn
 signupButton.addEventListener("click", ()=>{
@@ -70,15 +70,18 @@ tags.forEach((tag) => {
 const readMoreBtn = document.querySelector("#readmoreBtn");
 let more = document.querySelector(".moreSec");
 
-readMoreBtn.addEventListener("click",()=>{
+//readMoreBtn.addEventListener("click",()=>{
 
-  if (more.classList.contains("viewMore")){
-    more.classList.remove("viewMore")
-    readMoreBtn.innerHTML = `<p>Read More</p>
-            <i class='bx bxs-chevron-down htmlcss-arrow arrow'></i>`;
-  }else{
-    more.classList.add("viewMore")
-    readMoreBtn.innerHTML = `<p>Read Less</p>
-            <i class='bx bxs-chevron-up htmlcss-arrow arrow'></i>`;
-  }
-})
+  //if (more.classList.contains("viewMore")){
+    //more.classList.remove("viewMore")
+    //readMoreBtn.innerHTML = `<p>Read More</p>
+            //<i class='bx bxs-chevron-down htmlcss-arrow arrow'></i>`;
+  //}else{
+    //more.classList.add("viewMore")
+    //readMoreBtn.innerHTML = `<p>Read Less</p>
+            //<i class='bx bxs-chevron-up htmlcss-arrow arrow'></i>`;
+  //}
+//})
+
+// script.js
+

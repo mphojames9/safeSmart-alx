@@ -7,33 +7,10 @@
   <link rel="stylesheet" href="../main.css">
   <link rel="stylesheet" href="../contactUs.css">
   <link rel="stylesheet" href="../footer.css">
+  <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  <script type="text/javascript">
-    (function () {
-      // https://dashboard.emailjs.com/admin/account
-      emailjs.init({
-        publicKey: "drD2CBWiRuBzQGBEO",
-      });
-    })();
-  </script>
-  <script type="text/javascript">
-    window.onload = function () {
-      document.getElementById('contact-form').addEventListener('submit', function (event) {
-        event.preventDefault();
-        // these IDs from the previous steps
-        emailjs.sendForm('service_a7c5ag9', 'template_5bc1mt5', this)
-          .then(() => {
-            console.log('SUCCESS!');
-          }, (error) => {
-            console.log('FAILED...', error);
-          });
-      });
-    }
-  </script>
-
 </head>
 
 <body>
@@ -144,22 +121,23 @@
         <p style="color: rgb(6, 5, 9); padding:10px">If you have any questions, feel free to send us a message.
            One of our consultants will reach out to you. I'm here to assist you.</p>
 
-        <form id="contact-form">
-          <div class="input-box">
-            <input type="text" placeholder="Enter your name">
+
+           <form id="contact-form">
+            <!-- To simplify the tutorial, the value is static. -->
+            <input type="hidden" name="contact_number" value="697483">
+            <div class="input-box">
+            <input type="text" name="user_name" placeholder="Enter your name">
           </div>
           <div class="input-box">
-            <input type="text" placeholder="Enter your email">
+            <input type="email" name="user_email" placeholder="Enter your email">
           </div>
           <div class="input-box">
             <input type="text" placeholder="Phone number">
           </div>
           <div class="input-box message-box">
             <textarea className="form-control" name="message" placeholder="Enter your message"></textarea>
-          </div>
-          <div class="button">
-            <input type="button" value="Submit">
-          </div>
+          </div> 
+            <input class="button" id="submitBtn" type="submit" value="Send">
         </form>
       </div>
     </div>
@@ -212,7 +190,104 @@
     <p class="footer-copyright fade">Copyright &copy; 2024 safesmart.co.za - All Right Reserved</p>
   </div>
 
+  
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      // https://dashboard.emailjs.com/admin/account
+      emailjs.init({
+        publicKey: "drD2CBWiRuBzQGBEO",
+      });
+    })();
+  </script>
+  <script type="text/javascript">
+    window.onload = function () {
+      document.getElementById('contact-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        // these IDs from the previous steps
+        emailjs.sendForm('service_a7c5ag9', 'template_5bc1mt5', this)
+          .then(() => {
+            successfullySent();
+          }, (error) => {
+            failedToSend();
+          });
+      });
+    }
 
+    let icon = {
+  success:
+  '<span class="material-symbols-outlined">task_alt</span>',
+  danger:
+  '<span class="material-symbols-outlined">error</span>',
+  warning:
+  '<span class="material-symbols-outlined">warning</span>',
+  info:
+  '<span class="material-symbols-outlined">info</span>',
+};
+
+const showToast = (
+  message = "Sample Message",
+  toastType = "info",
+  duration = 5000) => {
+  if (
+      !Object.keys(icon).includes(toastType))
+      toastType = "info";
+
+  let box = document.createElement("div");
+  box.classList.add(
+      "toast", `toast-${toastType}`);
+  box.innerHTML = ` <div class="toast-content-wrapper">
+                    <div class="toast-icon">
+                    ${icon[toastType]}
+                    </div>
+                    <div class="toast-message">${message}</div>
+                    <div class="toast-progress"></div>
+                    </div>`;
+  duration = duration || 5000;
+  box.querySelector(".toast-progress").style.animationDuration =
+          `${duration / 1000}s`;
+
+  let toastAlready = 
+      document.body.querySelector(".toast");
+  if (toastAlready) {
+      toastAlready.remove();
+  }
+
+  document.body.appendChild(box)};
+
+let submit = 
+  document.querySelector("#submitBtn");
+let information = 
+  document.querySelector(".custom-toast.info-toast");
+let failed = 
+  document.querySelector(".custom-toast.danger-toast");
+let warn = 
+  document.querySelector(".custom-toast.warning-toast");
+
+
+//information.addEventListener("click",(e) => {
+      //e.preventDefault();
+      //showToast("Do POTD and Earn Coins","info",5000);
+  //});
+
+//failed.addEventListener("click",(e) => {
+      //e.preventDefault();
+      //showToast("Failed unexpected error","danger",5000);
+  //});
+
+//warn.addEventListener("click", (e) => {
+  //e.preventDefault();
+  //showToast("!warning! server error","warning",5000);
+//});
+
+function successfullySent(){
+  showToast("Article Submitted Successfully","success",5000);
+}
+
+function failedToSend(){
+  showToast("Failed unexpected error","danger",5000);
+}
+  </script>
   <script src="../index.js"></script>
 </body>
 
