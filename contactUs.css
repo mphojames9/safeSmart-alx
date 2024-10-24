@@ -39,7 +39,7 @@
 .contact-us_header {
   width: 100%;
   height: 500px;
-  background-image: url("/background/0d979d01-ac1a-4d6a-848a-2b7db3049024.jfif");
+  background-image: url("./background/0d979d01-ac1a-4d6a-848a-2b7db3049024.jfif");
   background-size: 100% 100%;
   display: flex;
   align-items: center;
@@ -56,6 +56,10 @@
   width: 500px;
   font-size: 3em;
   text-align: center;
+}
+
+.reachOut {
+  font-size: 3em;
 }
 
 .contact-us_header .socialMediaIcons_contactUs{
@@ -103,11 +107,19 @@
     bottom: 0;
     margin: 0.5em;
   }
+
+  .reachOut {
+    font-size: 2em;
+  }
 }
 
 @media (max-width:450px){
   .contact-us_header h1 {
     font-size: 2em;
+  }
+
+  .reachOut {
+    font-size: 1.8em;
   }
 }
 
