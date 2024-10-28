@@ -56,28 +56,58 @@
   </nav>
   <!--End of navigation bar-->
 
-  <!--Login popup form-->
-  <div class='login-popup'>
-    <form action="" class='login-popup-container'>
-      <div class="login-popup-title">
-        <h2>Login</h2>
-        <img class="closeLoginForm" src="./icons/cross_icon.png" alt="" />
-      </div>
-      <div class="login-popup-inputs">
-        <input type='email' placeholder='Your email' required />
-        <input type='password' placeholder='Password' required />
-      </div>
-      <button>Login</button>
-      <div class="login-popup-condition">
-        <input type='checkbox' required></input>
-        <p>By continuing, I agree to the terms of use & privacy policy</p>
-      </div>
-      <div onclick="" style="display: flex;gap: 4px;">
-        <p>Create a new account?</p>
-        <a href="" class="Create-new-account-button">Click here</a>
-      </div>
-    </form>
-  </div>
+	<div class='login-popup'>
+	<form id="login" class='login-popup-container'>
+    <div class="login-popup-title">
+      <h2>Login</h2>
+      <img class="closeLoginForm" src="./icons/cross_icon.png" alt="" />
+    </div>
+    <div class="login-popup-inputs">
+		<input type="text" autocomplete="off" id="username" placeholder="Username" />
+		<input type="password" autocomplete="off" id="password" placeholder="Password" />
+		</div>
+    <input class="button" type="submit" value="Login" />
+    <div class="login-popup-condition">
+      <input type='checkbox' required></input>
+      <p>By continuing, I agree to the terms of use & privacy policy</p>
+    </div>
+    <div onclick="" style="display: flex;gap: 4px;">
+      <p>Create a new account?</p>
+      <a href="./registerUser.html" class="Create-new-account-button">Click here</a>
+    </div>
+	</form>
+</div>
+
+	<script>
+		const form = document.getElementById('login')
+		form.addEventListener('submit', login)
+
+		async function login(event) {
+			event.preventDefault()
+			const username = document.getElementById('username').value
+			const password = document.getElementById('password').value
+
+			const result = await fetch('/api/login', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				body: JSON.stringify({
+					username,
+					password
+				})
+			}).then((res) => res.json())
+
+			if (result.status === 'ok') {
+				// everythign went fine
+				console.log('Got the token: ', result.data)
+				localStorage.setItem('token', result.data)
+				alert('Success')
+			} else {
+				alert(result.error)
+			}
+		}
+	</script>
   <!--End of Login popup form-->
 
   <header>

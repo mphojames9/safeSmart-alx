@@ -95,6 +95,22 @@ button {
   border: none;
 }
 
+.button {
+  color: var(--clr-light);
+  background-color: var(--clr-button);
+  transition: 300ms ease-in-out;
+  font-size: var(--fs-body);
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+}
+
+.registerLogo {
+  position: fixed;
+  width: 150px;
+  margin: 3em;
+}
+
 
 /*navigation bar */
 nav{
@@ -378,16 +394,58 @@ nav .navbar .links li .sub-menu li{
 
 
 /*Login popup form */
+
+.regStatus {
+  background-color: white;
+  max-width: 500px;
+  width: 100%;
+  padding: 1em;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  margin: 10em auto;
+  border-radius: 5px;
+}
+
+.regStatus a {
+  text-decoration: none;
+  color: white;
+}
+
+.regStatus button{
+  background-color: #3498db;
+  padding: 10px;
+  cursor: pointer;
+  transition: 300ms ease-in-out;
+}
+
+.regStatus button:hover {
+  background-color: #63b1e6;
+  transform: scale(1.05);
+}
+
 .login-popup{
   position: fixed;
   z-index: 99 ;
   width: 100%;
   height: 100%;
-  background-color: #00000090;
+  background-color: #000000a4;
   display: none;
   margin-top: -70px;
   animation: fade 400ms;
+}
 
+.register-popup{
+  position: fixed;
+  z-index: 99 ;
+  width: 100%;
+  height: 100%;
+  background-color: #000000b7;
+  display: none;
+  margin-top: -70px;
+  animation: fade 400ms;
 }
 
 .showForm{

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Registration</title>
+</head>
+
+<body onload="displayForm()" style="background-image: url('./background/Online-event-registration.png'); background-size: cover; background-attachment: fixed;"> 
+    <nav>
+        <div class="navbar fade">
+          <i class='bx bx-menu'></i>
+          <div class="logo">
+            <img src="/logo/safe_smart_logo.png" alt="" class="main-logo">
+            <a href="#">safe<span class="logo-deco">Sma</span>rt</a>
+          </div>
+          <div class="nav-links">
+            <div class="sidebar-logo">
+              <div class="logo">safe<span class="logo-deco">Sma</span>rt</div>
+              <i class='bx bx-x'></i>
+            </div>
+            <ul class="links">
+              <li><a href="#app-download">Home</a></li>
+              <li>
+                <a href="./pages/services.html">Services</a>
+                <i class='bx bxs-chevron-down htmlcss-arrow arrow' style="display: none;"></i>
+                <ul class="htmlCss-sub-menu sub-menu" style="display: none;">
+                  <span>
+                    <i class='arrow more-arrow'></i>
+                  </span>
+                  <ul class="more-sub-menu sub-menu ">
+                  </ul>
+              </li>
+            </ul>
+            </li>
+            <li>
+              <a href="#">Safe Smart</a>
+              <i class='bx bxs-chevron-down js-arrow arrow '></i>
+              <ul class="js-sub-menu sub-menu">
+                <li><a href="./pages/about.html">About us</a></li>
+                <li><a href="#founder">Founders</a></li>
+              </ul>
+            </li>
+            <li><a href="./pages/contactus.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <button class="sign-in-button">Sign in</button>
+        </div>
+      </nav>
+   
+   
+    <div class='register-popup' style="margin-top: 0;">
+        <form id="reg-form" class='login-popup-container'>
+            <div class="login-popup-title">
+                <h2>Register</h2>
+                <img class="closeLoginForm" src="./icons/cross_icon.png" alt="" />
+            </div>
+            <div class="login-popup-inputs">
+                <input type="text" autocomplete="off" id="username" placeholder="Username" />
+                <input type="email" autocomplete="off" id="email" placeholder="Please enter email" />
+                <input type="password" autocomplete="off" id="password" placeholder="Password" />
+            </div>
+            <input class="button" type="submit" value="Register" />
+            <div class="login-popup-condition">
+                <input type='checkbox' required></input>
+                <p>By continuing, I agree to the terms of use & privacy policy</p>
+            </div>
+            <div onclick="" style="display: flex;gap: 4px;">
+                <p>Already have account?</p>
+                <a href="" class="login-account-button">Login</a>
+            </div>
+        </form>
+    </div>
+
+    <div class="regStatus">
+        <h1>Registration successful</h1>
+        <button>
+            <a href="./index.html">Back to Home</a>
+        </button>
+    </div>
+
+
+    <script>
+        const regContainer = document.querySelector(".register-popup");
+        const sucessForm = document.querySelector(".regStatus");
+        function displayForm(){
+            regContainer.classList.add("showForm")
+        }
+
+        const registerform = document.getElementById('reg-form')
+        registerform.addEventListener('submit', registerUser)
+
+        async function registerUser(event) {
+            event.preventDefault()
+            const username = document.getElementById('username').value
+            const password = document.getElementById('password').value
+
+            const result = await fetch('/api/register', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    username,
+                    password
+                })
+            }).then((res) => res.json())
+
+            if (result.status === 'ok') {
+                // everythign went fine
+                sucessForm.style.display = "flex"
+                regContainer.classList.remove("showForm");
+                
+            } else {
+                alert(result.error)
+            }
+        }
+    </script>
+</body>
+
+</html>
