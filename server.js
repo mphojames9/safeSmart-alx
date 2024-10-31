@@ -8,11 +8,7 @@ const jwt = require('jsonwebtoken')
 
 const JWT_SECRET = 'sdjkfh8923yhjdksbfma@#*(&@*!^#&@bhjb2qiuhesdbhjdsfg839ujkdhfjk'
 
-mongoose.connect('mongodb://localhost:27017/login-app-db', {
-	useNewUrlParser: true,
-	useUnifiedTopology: true,
-	useCreateIndex: true
-})
+mongoose.connect('mongodb+srv://mphojames9:Beekman907@cluster0.ygntd.mongodb.net/oneStop').then(()=>console.log("DB connected"));
 
 const app = express()
 app.use('/', express.static(path.join(__dirname, 'static')))
