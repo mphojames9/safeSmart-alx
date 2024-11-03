@@ -111,6 +111,32 @@ button {
   margin: 3em;
 }
 
+.navbar  .sign-in-button{
+  width: 80px;
+  color: var(--clr-light);
+  padding: 5px;
+  border-radius: 50px;
+}
+
+.navbar .sign-out-section {
+  color:white;
+  display: none;
+  font-size: 0.8rem;
+  align-items: center;
+  justify-content: space-between;
+  transition: 300ms;
+  cursor: pointer;
+}
+
+.navbar .sign-out-section:hover {
+  transform: scale(1.05);
+  color: rgb(235, 176, 176);
+}
+
+.navbar .sign-out-section:active {
+  transform: scale(0.95);
+}
+
 
 /*navigation bar */
 nav{
@@ -233,14 +259,6 @@ nav .navbar .links li:hover .js-sub-menu{
 }
 .links li .sub-menu .more:hover .more-sub-menu{
   display: block;
-}
-
-
-.navbar  .sign-in-button{
-  width: 80px;
-  color: var(--clr-light);
-  padding: 5px;
-  border-radius: 50px;
 }
 
 .navbar .sign-in-button:hover{
@@ -586,7 +604,7 @@ header .header-content .header-subscribe-box-section .subscribe-button{
     flex-direction: row;
     justify-content: center;
     gap: 5px;
-    width: 120px;
+    width: 130px;
     border-radius: 4px;
     border: none;
     height: 48px;

@@ -67,7 +67,7 @@ app.post('/api/login', async (req, res) => {
 			JWT_SECRET
 		)
 
-		return res.json({ status: 'ok', data: token })
+		return res.json({ status: 'ok', data: token });
 	}
 
 	res.json({ status: 'error', error: 'Invalid username/password' })

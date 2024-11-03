@@ -64,29 +64,33 @@
         </ul>
       </div>
       <button class="sign-in-button">Sign in</button>
+      <div class="sign-out-section">
+        <p class="welcome">Logout</p>
+        <img src="../icons/logout_icon.png" class="logout-icon" alt="">
+      </div>
     </div>
   </nav>
   <!--End of navigation bar-->
 
   <!--Login popup form-->
-  <div class='login-popup'>
-    <form action="" class='login-popup-container'>
+	<div class='login-popup'>
+    <form id="login" class='login-popup-container'>
       <div class="login-popup-title">
         <h2>Login</h2>
         <img class="closeLoginForm" src="../icons/cross_icon.png" alt="" />
       </div>
       <div class="login-popup-inputs">
-        <input type='email' placeholder='Your email' required />
-        <input type='password' placeholder='Password' required />
+      <input type="text" autocomplete="off" id="username" placeholder="Username" />
+      <input type="password" autocomplete="off" id="password" placeholder="Password" />
       </div>
-      <button>Login</button>
+      <input class="button" type="submit" value="Login" />
       <div class="login-popup-condition">
         <input type='checkbox' required></input>
         <p>By continuing, I agree to the terms of use & privacy policy</p>
       </div>
       <div onclick="" style="display: flex;gap: 4px;">
         <p>Create a new account?</p>
-        <a href="" class="Create-new-account-button">Click here</a>
+        <a href="./registerUser.html" class="Create-new-account-button">Click here</a>
       </div>
     </form>
   </div>
@@ -251,6 +255,7 @@
     <p class="footer-copyright fade">Copyright &copy; 2024 safesmart.co.za - All Right Reserved</p>
   </div>
   <script src="../index.js"></script>
+  <script src="../signIn.js"></script>
 </body>
 
 </html>
