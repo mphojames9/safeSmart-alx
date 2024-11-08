@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="stickyCards.css">
   <link rel="stylesheet" href="footer.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -87,14 +89,14 @@
     <div class="header-content fade ">
       <h1 class="header-content-h1"><span class="header-span">Subscribe.</span> Get updated. <span
           class="stay-healthy">Stay healthy.</span></h1>
-      <div class="header-subscribe-box-section">
-        <input class=search-place type="text" placeholder="Enter yout email address">
+      <form id="contact-form" class="header-subscribe-box-section">
+        <input class="emailInput search-place" type="text" name="user_email" placeholder="Enter yout email address">
         <button class="subscribe-button">
           <i class='bx bx-bell'></i>
           <p>Subscribe
           <p>
         </button>
-      </div>
+      </form>
       <div class="place-selection-section">
         <div>
           <h2>Safe Smart bracelet</h2>
@@ -241,6 +243,115 @@
     <hr />
     <p class="footer-copyright fade">Copyright &copy; 2024 safesmart.co.za - All Right Reserved</p>
   </div>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      // https://dashboard.emailjs.com/admin/account
+      emailjs.init({
+        publicKey: "drD2CBWiRuBzQGBEO",
+      });
+    })();
+  </script>
+  <script type="text/javascript">
+    window.onload = function () {
+      document.getElementById('contact-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+
+      const inputEmail = document.querySelector(".emailInput").value;
+
+      if(inputEmail){
+                // these IDs from the previous steps
+          emailjs.sendForm('service_a7c5ag9', 'template_5bc1mt5', this)
+          .then(() => {
+            successfullySent();
+          }, (error) => {
+            failedToSend();
+          });
+      }else{
+          enterAllfields();
+      }
+
+      });
+    }
+
+    let icon = {
+  success:
+  '<span class="material-symbols-outlined">task_alt</span>',
+  danger:
+  '<span class="material-symbols-outlined">error</span>',
+  warning:
+  '<span class="material-symbols-outlined">warning</span>',
+  info:
+  '<span class="material-symbols-outlined">info</span>',
+};
+
+const showToast = (
+  message = "Sample Message",
+  toastType = "info",
+  duration = 5000) => {
+  if (
+      !Object.keys(icon).includes(toastType))
+      toastType = "info";
+
+  let box = document.createElement("div");
+  box.classList.add(
+      "toast", `toast-${toastType}`);
+  box.innerHTML = ` <div class="toast-content-wrapper">
+                    <div class="toast-icon">
+                    ${icon[toastType]}
+                    </div>
+                    <div class="toast-message">${message}</div>
+                    <div class="toast-progress"></div>
+                    </div>`;
+  duration = duration || 5000;
+  box.querySelector(".toast-progress").style.animationDuration =
+          `${duration / 1000}s`;
+
+  let toastAlready = 
+      document.body.querySelector(".toast");
+  if (toastAlready) {
+      toastAlready.remove();
+  }
+
+  document.body.appendChild(box)};
+
+let submit = 
+  document.querySelector("#submitBtn");
+let information = 
+  document.querySelector(".custom-toast.info-toast");
+let failed = 
+  document.querySelector(".custom-toast.danger-toast");
+let warn = 
+  document.querySelector(".custom-toast.warning-toast");
+
+
+//information.addEventListener("click",(e) => {
+      //e.preventDefault();
+      //showToast("Do POTD and Earn Coins","info",5000);
+  //});
+
+//failed.addEventListener("click",(e) => {
+      //e.preventDefault();
+      //showToast("Failed unexpected error","danger",5000);
+  //});
+
+//warn.addEventListener("click", (e) => {
+  //e.preventDefault();
+  //showToast("!warning! server error","warning",5000);
+//});
+
+function successfullySent(){
+  showToast("Successfully Subscribed","success",5000);
+}
+
+function failedToSend(){
+  showToast("Failed unexpected error","danger",5000);
+}
+
+function enterAllfields(){
+        showToast("Please input enter email correctly","info",5000);
+}
+  </script>
 
   <script src="index.js"></script>
   <script src="signIn.js"></script>

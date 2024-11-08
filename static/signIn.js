@@ -25,7 +25,6 @@ const form = document.getElementById('login')
 				console.log('Got the token: ', result.data)
 				localStorage.setItem('token', result.data)
         login_popup_form.classList.remove("showForm");
-				alert('Success')
 			} else {
 				alert(result.error)
 			}
